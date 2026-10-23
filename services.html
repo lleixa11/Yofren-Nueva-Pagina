@@ -1,0 +1,764 @@
+<!DOCTYPE html -mt-16>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobile Dog &amp; Cat Grooming Services | Yofren Master</title>
+<meta content="services, follow" name="robots"/>
+<!-- Favicon (El icono pequeño en la pestaña del navegador) -->
+<link href="assets/images/icon-yofren.ico" rel="icon" type="image/ico"/>
+<!-- SEO Básico -->
+<meta content="Discover our comprehensive pet grooming packages. From relaxing baths and breed-specific styling to dental cleaning and de-shedding for dogs and cats." name="description"/>
+<link href="https://services.yofrenmasterpetgrooming.com/services.html" rel="canonical"/>
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta content="website" property="og:type"/>
+<meta content="https://services.yofrenmasterpetgrooming.com/services.html" property="og:url"/>
+<meta content="Mobile Dog &amp; Cat Grooming Services | Yofren Master" property="og:title"/>
+<meta content="Discover our comprehensive pet grooming packages. From relaxing baths and breed-specific styling to dental cleaning and de-shedding for dogs and cats." property="og:description"/>
+<meta content="https://services.yofrenmasterpetgrooming.com/assets/images/Web-Slider.jpg" property="og:image"/>
+<!-- Twitter Cards -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://services.yofrenmasterpetgrooming.com/services.html" name="twitter:url"/>
+<meta content="Mobile Dog &amp; Cat Grooming Services | Yofren Master" name="twitter:title"/>
+<meta content="Discover our comprehensive pet grooming packages. From relaxing baths and breed-specific styling to dental cleaning and de-shedding for dogs and cats." name="twitter:description"/>
+<meta content="https://services.yofrenmasterpetgrooming.com/assets/images/Web-Slider.jpg" name="twitter:image"/>
+<link href="assets/css/tailwind.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;family=Montserrat:wght@600;700;800;900&amp;family=Dancing+Script:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        
+        .card-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover-effect:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(119, 189, 0, 0.2);
+        }
+        
+        /* Tab styles */
+        .tab-button {
+            transition: all 0.3s ease;
+        }
+        
+        .tab-button.active {
+            background: linear-gradient(135deg, #77BD00 0%, #BED95F 100%);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        /* Cuando el botón está activo, forzamos el color blanco en los iconos SVG hijos */
+        .tab-button.active svg {
+            color: white !important;
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Checkmark animation */
+        .checkmark {
+            transition: transform 0.2s ease;
+        }
+        
+        .service-item:hover .checkmark {
+            transform: scale(1.2) rotate(5deg);
+        }
+        
+        /* Video container responsive */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 1.5rem;
+        }
+
+        /* Custom icon colors */
+        .icon-green {
+            color: #77BD00;
+        }
+
+        .icon-brown {
+            color: #8F5A39;
+        }
+
+        .icon-container {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+        }
+    
+
+		#mainNav .nav-logo {
+			filter: none;
+			transition: filter 0.3s ease;
+		}
+
+		#mainNav .nav-link {
+			color: white;
+			transition: color 0.3s ease;
+		}
+
+		#mainNav .nav-link:hover {
+			color: #77BD00;
+			background: rgba(255, 255, 255, 0.1);
+		}
+
+		#mainNav .nav-phone {
+			color: white;
+			border-color: rgba(255, 255, 255, 0.3);
+			transition: all 0.3s ease;
+		}
+
+		#mainNav .nav-phone:hover {
+			background: #77BD00;
+			border-color: #77BD00;
+		}
+
+		#mainNav .nav-mobile-btn {
+			color: white;
+			transition: color 0.3s ease;
+		}
+
+		#mainNav.nav-scrolled {
+			background: rgba(255, 255, 255, 0.97);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+			border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+		}
+
+		#mainNav.nav-scrolled .nav-logo {
+			filter: none;
+		}
+
+		#mainNav.nav-scrolled .nav-link {
+			color: #3E180C;
+		}
+
+		#mainNav.nav-scrolled .nav-link:hover {
+			color: #77BD00;
+			background: rgba(119, 189, 0, 0.05);
+		}
+
+		#mainNav.nav-scrolled .nav-phone {
+			color: #3E180C;
+			border-color: #e5e7eb;
+		}
+
+		#mainNav.nav-scrolled .nav-phone:hover {
+			color: white;
+			background: #77BD00;
+			border-color: #77BD00;
+		}
+
+		#mainNav.nav-scrolled .nav-mobile-btn {
+			color: #3E180C;
+		}
+/* Staggered Services / Add-ons */
+.services-staggered-card{transition:transform .35s ease,box-shadow .35s ease}
+.services-staggered-card:hover{transform:translateY(-12px) rotate(0deg)!important;box-shadow:0 24px 55px rgba(79,65,53,.16)}
+@media (min-width:1024px){
+  .services-staggered-card:nth-child(1){transform:rotate(-2deg);margin-top:22px}
+  .services-staggered-card:nth-child(2){transform:rotate(1deg);margin-top:0}
+  .services-staggered-card:nth-child(3){transform:rotate(2.5deg);margin-top:30px}
+}
+.services-staggered-image{height:250px;object-fit:cover;transition:transform .5s ease}
+.services-staggered-card:hover .services-staggered-image{transform:scale(1.06)}
+.addon-card{transition:transform .3s ease,box-shadow .3s ease}
+.addon-card:hover{transform:translateY(-8px);box-shadow:0 20px 45px rgba(79,65,53,.13)}
+@media (min-width:1024px){
+ .addon-card:nth-child(1){margin-top:18px}
+ .addon-card:nth-child(2){margin-top:0}
+ .addon-card:nth-child(3){margin-top:26px}
+ .addon-card:nth-child(4){margin-top:4px}
+ .addon-card:nth-child(5){margin-top:24px}
+ .addon-card:nth-child(6){margin-top:8px}
+}
+</style>
+</head>
+<body class="scroll-smooth">
+<!-- ============================================ -->
+<!-- TOP BAR + NAVBAR                            -->
+<!-- ============================================ -->
+<div class="bg-contrast text-white py-2 px-6 text-xs">
+<div class="container mx-auto flex justify-between items-center">
+<div class="flex items-center gap-5 font-lato">
+<a class="hover:text-primary transition flex items-center gap-1.5" href="tel:+17863200218">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+					(786) 320-0218
+				</a>
+<span class="hidden sm:inline text-white/30">|</span>
+<span class="hidden sm:inline items-center gap-1.5">Serving South Florida since 2010</span>
+</div>
+<div class="flex items-center gap-4 font-lato">
+<a class="hover:text-primary transition" href="careers.html">Careers</a>
+<span class="text-white/30">|</span>
+<a class="hover:text-primary transition" href="franchise.html">Franchising</a>
+</div>
+</div>
+</div>
+<nav class="sticky top-0 z-50 transition-all duration-300" id="mainNav">
+<div class="container mx-auto px-6">
+<div class="flex items-center justify-between h-16">
+<div class="flex-shrink-0">
+<a class="block" href="index.html">
+<img alt="Yofren Master Pet Grooming Logo" class="nav-logo h-11 w-auto object-contain hover:opacity-80 transition" src="assets/images/Yofren_Logo_1 (1).png"/>
+</a>
+</div>
+<div class="hidden md:flex items-center flex-1 justify-center">
+<ul class="flex items-center gap-0.5 font-lato font-medium text-sm flex-wrap justify-center">
+<li><a class="nav-link px-3 py-2 block" href="index.html">Home</a></li>
+<li><a class="nav-link px-3 py-2 block" href="about.html">About Us</a></li>
+<li><a class="nav-link px-3 py-2 block" href="services.html">Services</a></li>
+<li><a class="nav-link px-3 py-2 block" href="locations.html">Locations</a></li>
+<li><a class="nav-link px-3 py-2 block" href="blog.html">Blog</a></li>
+<li><a class="nav-link px-3 py-2 block" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="hidden md:flex items-center gap-3 flex-shrink-0">
+<a class="nav-phone w-9 h-9 rounded-full border flex items-center justify-center hover:text-white transition-all duration-200" href="tel:+17863200218">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="bg-primary hover:bg-green-600 text-white font-stem font-bold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank">
+						Book Now
+					</a>
+</div>
+<button class="nav-mobile-btn md:hidden p-1" id="mobileMenuBtn">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+<div class="hidden md:hidden pb-4" id="mobileMenu">
+<div class="bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-lg mt-2">
+<ul class="space-y-0.5 font-lato font-medium text-sm mb-4">
+<li><a class="block px-3 py-2.5 rounded-lg bg-primary/5 text-primary font-semibold" href="index.html">Home</a>
+</li>
+<li><a class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast" href="about.html">About
+								Us</a></li>
+<li><a class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast" href="services.html">Services</a>
+</li>
+<li><a class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast" href="locations.html">Locations</a>
+</li>
+<li><a class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast" href="blog.html">Blog</a>
+</li>
+<li><a class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast" href="contact.html">Contact</a>
+</li>
+</ul>
+<a class="block" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank">
+<button class="bg-primary hover:bg-green-600 text-white font-stem font-bold text-sm px-6 py-3 rounded-full shadow-md w-full transition">
+							Book Now
+						</button>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- ============================================ -->
+<!-- HERO                                        -->
+<!-- ============================================ -->
+<section class="relative overflow-hidden min-h-[70vh] flex items-center -mt-16">
+<div class="absolute inset-0 z-0">
+<img alt="Yofren groomer washing a dog inside a mobile grooming van" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1600&amp;h=900&amp;fit=crop'" src="assets/images/hero.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+</div>
+<div class="container mx-auto max-w-7xl relative z-10 px-6 py-28 lg:py-36">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 bg-white bg-opacity-15 backdrop-blur-md px-5 py-2 rounded-full mb-6 border border-white/20">
+<span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+<span class="font-stem font-bold text-white text-sm uppercase tracking-wide">Mobile Pet
+						Grooming</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-stem font-black text-white mb-4 leading-tight">
+					Professional Grooming Services —
+					<span class="text-primary">At Your Doorstep</span>
+</h1>
+<p class="text-lg font-lato text-gray-200 mb-8 leading-relaxed max-w-2xl">
+					From relaxing baths to breed-specific cuts, our certified groomers bring a fully-equipped, climate-controlled
+					grooming studio straight to your driveway — professional care, personalized for your pet.
+				</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary hover:bg-green-600 text-white font-stem font-bold text-sm px-8 py-3 rounded-full shadow-lg transition flex items-center justify-center gap-2" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+						Book an Appointment
+					</a>
+<a class="bg-white/10 hover:bg-white/20 text-white font-stem font-bold text-sm px-8 py-3 rounded-full border border-white/30 transition flex items-center justify-center gap-2" href="https://api.whatsapp.com/send/?phone=17863200218&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank">
+						Chat on WhatsApp
+					</a>
+</div>
+</div>
+</div>
+<!-- Paw print trail -->
+<svg class="hidden sm:block absolute bottom-28 left-[8%] w-5 h-5 text-white/25 rotate-[-15deg] z-10" fill="currentColor" viewbox="0 0 14 14">
+<path d="M 9.412959,0.00215164 C 8.1693111,0.14587964 7.4631991,1.5093558 7.3733471,2.6936522 7.2264421,3.7464942 7.6860601,5.0899481 8.7918901,5.3320382 9.750208,5.4175142 10.512633,4.5171926 10.825819,3.6583651 11.195679,2.5833906 11.206482,1.147845 10.309038,0.34250684 10.059753,0.12647084 9.739671,-0.00476426 9.412959,0.00215164 z m -5.0729339,0.056367 c -1.034807,0.074858 -1.5652,1.27744256 -1.493223,2.24276386 0.0088,1.2907239 0.717612,2.7424122 2.010186,3.0488129 0.963956,0.1042448 1.606661,-0.9181087 1.66656,-1.812036 0.123011,-1.3680543 -0.483132,-3.02530546 -1.855765,-3.43834986 -0.106687,-0.029465 -0.217332,-0.044089 -0.327758,-0.041191 z M 12.655043,4.2036246 c -1.388365,0.1017608 -2.266355,1.5813816 -2.326691,2.9184062 -0.07305,0.8707439 0.489487,1.9657608 1.436683,1.9057498 C 13.181597,8.8776256 14.035636,7.298817 14.00043,5.9270567 13.99133,5.1373276 13.490879,4.2365389 12.655043,4.2036246 z M 0.01075614,6.0085263 c -0.12855096,1.481506 0.908149,3.1560203 2.41413596,3.2493013 0.912778,-0.06096 1.343188,-1.121093 1.238576,-1.9598358 C 3.5801081,6.0604403 2.7526501,4.7931558 1.6775691,4.6275979 0.60248914,4.4620399 -0.00628982,5.221568 0.01075614,6.0085263 z M 7.1593651,7.2723472 c -1.411887,0.00329 -2.70277,0.9264694 -3.392913,2.1755314 -0.578235,0.9334254 -1.050947,1.9901564 -1.140853,3.1053424 0.01967,0.860048 0.840276,1.575842 1.663122,1.404534 1.173683,-0.152345 2.222485,-0.967418 3.44297,-0.8147 1.014283,0.08097 1.8507729,0.867482 2.8748439,0.856051 0.994345,0.03734 1.56796,-1.102139 1.188753,-1.994632 C 11.387234,10.726579 10.596107,9.6151936 9.746977,8.6142466 9.069618,7.87643 8.1824521,7.2396817 7.1593651,7.2723472 z"></path>
+</svg>
+<svg class="hidden sm:block absolute bottom-16 left-[13%] w-7 h-7 text-white/25 rotate-[10deg] z-10" fill="currentColor" viewbox="0 0 14 14">
+<path d="M 9.412959,0.00215164 C 8.1693111,0.14587964 7.4631991,1.5093558 7.3733471,2.6936522 7.2264421,3.7464942 7.6860601,5.0899481 8.7918901,5.3320382 9.750208,5.4175142 10.512633,4.5171926 10.825819,3.6583651 11.195679,2.5833906 11.206482,1.147845 10.309038,0.34250684 10.059753,0.12647084 9.739671,-0.00476426 9.412959,0.00215164 z m -5.0729339,0.056367 c -1.034807,0.074858 -1.5652,1.27744256 -1.493223,2.24276386 0.0088,1.2907239 0.717612,2.7424122 2.010186,3.0488129 0.963956,0.1042448 1.606661,-0.9181087 1.66656,-1.812036 0.123011,-1.3680543 -0.483132,-3.02530546 -1.855765,-3.43834986 -0.106687,-0.029465 -0.217332,-0.044089 -0.327758,-0.041191 z M 12.655043,4.2036246 c -1.388365,0.1017608 -2.266355,1.5813816 -2.326691,2.9184062 -0.07305,0.8707439 0.489487,1.9657608 1.436683,1.9057498 C 13.181597,8.8776256 14.035636,7.298817 14.00043,5.9270567 13.99133,5.1373276 13.490879,4.2365389 12.655043,4.2036246 z M 0.01075614,6.0085263 c -0.12855096,1.481506 0.908149,3.1560203 2.41413596,3.2493013 0.912778,-0.06096 1.343188,-1.121093 1.238576,-1.9598358 C 3.5801081,6.0604403 2.7526501,4.7931558 1.6775691,4.6275979 0.60248914,4.4620399 -0.00628982,5.221568 0.01075614,6.0085263 z M 7.1593651,7.2723472 c -1.411887,0.00329 -2.70277,0.9264694 -3.392913,2.1755314 -0.578235,0.9334254 -1.050947,1.9901564 -1.140853,3.1053424 0.01967,0.860048 0.840276,1.575842 1.663122,1.404534 1.173683,-0.152345 2.222485,-0.967418 3.44297,-0.8147 1.014283,0.08097 1.8507729,0.867482 2.8748439,0.856051 0.994345,0.03734 1.56796,-1.102139 1.188753,-1.994632 C 11.387234,10.726579 10.596107,9.6151936 9.746977,8.6142466 9.069618,7.87643 8.1824521,7.2396817 7.1593651,7.2723472 z"></path>
+</svg>
+<svg class="hidden sm:block absolute bottom-4 left-[19%] w-9 h-9 text-white/25 rotate-[-8deg] z-10" fill="currentColor" viewbox="0 0 14 14">
+<path d="M 9.412959,0.00215164 C 8.1693111,0.14587964 7.4631991,1.5093558 7.3733471,2.6936522 7.2264421,3.7464942 7.6860601,5.0899481 8.7918901,5.3320382 9.750208,5.4175142 10.512633,4.5171926 10.825819,3.6583651 11.195679,2.5833906 11.206482,1.147845 10.309038,0.34250684 10.059753,0.12647084 9.739671,-0.00476426 9.412959,0.00215164 z m -5.0729339,0.056367 c -1.034807,0.074858 -1.5652,1.27744256 -1.493223,2.24276386 0.0088,1.2907239 0.717612,2.7424122 2.010186,3.0488129 0.963956,0.1042448 1.606661,-0.9181087 1.66656,-1.812036 0.123011,-1.3680543 -0.483132,-3.02530546 -1.855765,-3.43834986 -0.106687,-0.029465 -0.217332,-0.044089 -0.327758,-0.041191 z M 12.655043,4.2036246 c -1.388365,0.1017608 -2.266355,1.5813816 -2.326691,2.9184062 -0.07305,0.8707439 0.489487,1.9657608 1.436683,1.9057498 C 13.181597,8.8776256 14.035636,7.298817 14.00043,5.9270567 13.99133,5.1373276 13.490879,4.2365389 12.655043,4.2036246 z M 0.01075614,6.0085263 c -0.12855096,1.481506 0.908149,3.1560203 2.41413596,3.2493013 0.912778,-0.06096 1.343188,-1.121093 1.238576,-1.9598358 C 3.5801081,6.0604403 2.7526501,4.7931558 1.6775691,4.6275979 0.60248914,4.4620399 -0.00628982,5.221568 0.01075614,6.0085263 z M 7.1593651,7.2723472 c -1.411887,0.00329 -2.70277,0.9264694 -3.392913,2.1755314 -0.578235,0.9334254 -1.050947,1.9901564 -1.140853,3.1053424 0.01967,0.860048 0.840276,1.575842 1.663122,1.404534 1.173683,-0.152345 2.222485,-0.967418 3.44297,-0.8147 1.014283,0.08097 1.8507729,0.867482 2.8748439,0.856051 0.994345,0.03734 1.56796,-1.102139 1.188753,-1.994632 C 11.387234,10.726579 10.596107,9.6151936 9.746977,8.6142466 9.069618,7.87643 8.1824521,7.2396817 7.1593651,7.2723472 z"></path>
+</svg>
+<!-- Wave divider into next section -->
+<div class="absolute bottom-0 left-0 right-0 z-10 leading-none">
+<svg class="w-full h-14 sm:h-20" preserveaspectratio="none" viewbox="0 0 1440 100">
+<path d="M0,64L80,58.7C160,53,320,43,480,48C640,53,800,75,960,80C1120,85,1280,75,1360,69.3L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z" fill="#ffffff">
+</path>
+</svg>
+</div>
+</section>
+<!-- Services Tabs Section -->
+<section class="py-24 px-6 bg-white relative overflow-hidden">
+<div class="absolute -top-24 -left-24 w-80 h-80 bg-secondary/60 rounded-full blur-3xl"></div>
+<div class="absolute top-1/3 -right-32 w-96 h-96 bg-background rounded-full blur-3xl"></div>
+<div class="container mx-auto max-w-7xl relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 bg-background px-5 py-2 rounded-full mb-5 shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-stem font-bold text-primary text-sm uppercase tracking-wider">Our Services</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-stem font-black text-contrast leading-tight mb-4">Professional grooming, <span class="text-primary">brought to your door</span></h2>
+<p class="text-lg font-lato text-gray-600 leading-relaxed">Choose the grooming service that fits your pet. Every appointment is designed around comfort, cleanliness and personalized care.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8 lg:gap-10 items-start mb-10">
+<article class="services-staggered-card bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-xl">
+<div class="relative overflow-hidden">
+<img alt="Dog grooming service" class="services-staggered-image w-full" loading="lazy" src="assets/images/dog.jpeg"/>
+<div class="absolute left-5 bottom-[-20px] w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg border-4 border-white">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.5 11.5c0-3.6 2.4-6.5 5.5-6.5 1.1 0 2.1.4 3 1.1.9-.7 1.9-1.1 3-1.1 3.1 0 5.5 2.9 5.5 6.5S17.1 18 13 18h-2c-4.1 0-6.5-2.9-6.5-6.5Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+</div>
+<div class="p-7 pt-9">
+<h3 class="text-2xl font-stem font-black text-contrast mb-2">Dog Grooming</h3>
+<p class="font-lato text-gray-600 leading-relaxed mb-5">A complete grooming experience with bathing, haircut, nail care and more.</p>
+<a class="inline-flex items-center gap-2 text-primary font-stem font-bold mb-6 hover:gap-3 transition-all" href="#dog-services">View details <span>→</span></a>
+<div class="flex items-center justify-between bg-secondary/60 rounded-full px-5 py-3">
+<span class="font-lato font-semibold text-contrast text-sm">Starting at</span>
+<span class="font-stem font-black text-2xl text-primary">$75</span>
+</div>
+</div>
+</article>
+<article class="services-staggered-card bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-xl">
+<div class="relative overflow-hidden">
+<img alt="Cat grooming service" class="services-staggered-image w-full" loading="lazy" src="assets/images/cat.jpg"/>
+<div class="absolute left-5 bottom-[-20px] w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg border-4 border-white">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M6 9V4l4 3h4l4-3v5c0 5-2.7 8-6 8s-6-3-6-8Zm3 3h.01M15 12h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+</div>
+<div class="p-7 pt-9">
+<h3 class="text-2xl font-stem font-black text-contrast mb-2">Cat Grooming</h3>
+<p class="font-lato text-gray-600 leading-relaxed mb-5">Gentle grooming tailored to your feline friend, with a calm and comfortable approach.</p>
+<a class="inline-flex items-center gap-2 text-primary font-stem font-bold mb-6 hover:gap-3 transition-all" href="#cat-services">View details <span>→</span></a>
+<div class="flex items-center justify-between bg-secondary/60 rounded-full px-5 py-3">
+<span class="font-lato font-semibold text-contrast text-sm">Starting at</span>
+<span class="font-stem font-black text-2xl text-primary">$65</span>
+</div>
+</div>
+</article>
+<article class="services-staggered-card bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-xl">
+<div class="relative overflow-hidden">
+<img alt="Pet boarding service" class="services-staggered-image w-full" loading="lazy" src="assets/images/boarding.jpeg"/>
+<div class="absolute left-5 bottom-[-20px] w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg border-4 border-white">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="m3 11 9-7 9 7v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M9 21v-6h6v6" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+</div>
+<div class="p-7 pt-9">
+<h3 class="text-2xl font-stem font-black text-contrast mb-2">Pet Boarding</h3>
+<p class="font-lato text-gray-600 leading-relaxed mb-5">Comfortable care for pets who need a safe, attentive place while you're away.</p>
+<a class="inline-flex items-center gap-2 text-primary font-stem font-bold mb-6 hover:gap-3 transition-all" href="#boarding-services">View details <span>→</span></a>
+<div class="flex items-center justify-between bg-secondary/60 rounded-full px-5 py-3">
+<span class="font-lato font-semibold text-contrast text-sm">Starting at</span>
+<span class="font-stem font-black text-2xl text-primary">$55</span>
+</div>
+</div>
+</article>
+</div>
+<div class="text-center">
+<p class="font-lato text-sm text-gray-500">Prices shown are placeholders — update them to your current service pricing.</p>
+</div>
+</div>
+</section>
+<!-- Add-Ons Section -->
+<section class="py-24 px-6 bg-gradient-to-br from-background via-white to-secondary/30 relative overflow-hidden">
+<div class="absolute -bottom-32 -left-20 w-96 h-96 bg-secondary/70 rounded-full blur-3xl"></div>
+<div class="container mx-auto max-w-7xl relative z-10">
+<div class="grid lg:grid-cols-[.85fr_1.7fr] gap-12 lg:gap-16 items-center">
+<div class="lg:sticky lg:top-28">
+<div class="inline-flex items-center gap-2 bg-white px-5 py-2 rounded-full mb-5 shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-stem font-bold text-primary text-sm uppercase tracking-wider">Add-ons</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-stem font-black text-contrast leading-tight mb-4">Add a little <span class="text-primary">extra</span></h2>
+<p class="text-xl font-script text-accent mb-5">Make their grooming experience even better.</p>
+<p class="font-lato text-gray-600 leading-relaxed max-w-md mb-7">Enhance your pet's appointment with optional services for extra care, comfort and maintenance.</p>
+<a class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-green-600 text-white font-stem font-bold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank">Add to your booking <span>→</span></a>
+</div>
+<div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 items-start">
+<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
+<img alt="Nail clipping add-on" class="w-full h-40 object-cover rounded-2xl" loading="lazy" src="assets/images/dog_nail_clippers.jpg"/>
+<div class="p-3 pt-4"><h3 class="font-stem font-black text-lg text-contrast mb-1">Nail Clipping</h3><p class="font-lato text-sm text-gray-600 mb-4">Keep nails healthy and at the right length.</p><div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$15</div></div>
+</article>
+<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
+<img alt="Flea and tick shampoo add-on" class="w-full h-40 object-cover rounded-2xl" loading="lazy" src="assets/images/2.jpeg"/>
+<div class="p-3 pt-4"><h3 class="font-stem font-black text-lg text-contrast mb-1">Flea &amp; Tick Shampoo</h3><p class="font-lato text-sm text-gray-600 mb-4">Extra protection for a cleaner, happier pet.</p><div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$20</div></div>
+</article>
+<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
+<img alt="Anal gland expression add-on" class="w-full h-40 object-cover rounded-2xl" loading="lazy" src="assets/images/PHOTO-2026-04-10-16-23-16.JPG"/>
+<div class="p-3 pt-4"><h3 class="font-stem font-black text-lg text-contrast mb-1">Anal Gland Expression</h3><p class="font-lato text-sm text-gray-600 mb-4">Professional care for your pet's comfort.</p><div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$15</div></div>
+</article>
+<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
+<img alt="De-shedding treatment add-on" class="w-full h-40 object-cover rounded-2xl" loading="lazy" src="assets/images/PHOTO-2026-04-10-16-2w-22 2.jpg"/>
+<div class="p-3 pt-4"><h3 class="font-stem font-black text-lg text-contrast mb-1">De-Shedding Treatment</h3><p class="font-lato text-sm text-gray-600 mb-4">Reduce loose hair with a thorough treatment.</p><div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$XX</div></div>
+</article>
+<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
+<img alt="Deep dental cleaning add-on" class="w-full h-40 object-cover rounded-2xl" loading="lazy" src="assets/images/adittional.jpeg"/>
+<div class="p-3 pt-4"><h3 class="font-stem font-black text-lg text-contrast mb-1">Deep Dental Cleaning</h3><p class="font-lato text-sm text-gray-600 mb-4">An extra level of oral care during grooming.</p><div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$XX</div></div>
+</article>
+<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
+<img alt="Ear flushing add-on" class="w-full h-40 object-cover rounded-2xl" loading="lazy" src="assets/images/ear.webp"/>
+<div class="p-3 pt-4"><h3 class="font-stem font-black text-lg text-contrast mb-1">Ear Flushing</h3><p class="font-lato text-sm text-gray-600 mb-4">Deeper ear cleaning when extra care is needed.</p><div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$XX</div></div>
+</article>
+</div>
+</div>
+<p class="text-center font-lato text-xs text-gray-500 mt-10">Add-on prices marked +$XX are placeholders — replace them with your current prices.</p>
+</div>
+</section>
+<!-- The Mobile Grooming Van Section -->
+<section class="py-20 px-6 bg-white relative overflow-hidden">
+<!-- Decorative elements -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary opacity-5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-80 h-80 bg-secondary opacity-5 rounded-full blur-3xl"></div>
+<div class="container mx-auto max-w-7xl relative z-10">
+<!-- Header -->
+<div class="text-center mb-16">
+<div class="inline-flex items-center gap-2 bg-background px-5 py-2 rounded-full mb-6 shadow-lg">
+<!-- Replaced Van Emoji -->
+<span class="text-2xl text-primary">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm13.5-8.5l1.96 2.5H17V9.5h2.5zm-1.5 9c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"></path>
+</svg>
+</span>
+<span class="font-stem font-bold text-primary text-sm uppercase tracking-wide">Our Mobile Salon</span>
+</div>
+<h2 class="text-4xl lg:text-5xl font-stem font-bold text-contrast mb-4">
+                    The Mobile Grooming Van
+                </h2>
+<p class="text-xl font-script text-accent">
+                    A professional salon on wheels! 
+                    <svg class="w-5 h-5 inline-block text-accent" fill="currentColor" viewbox="0 0 24 24"><path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"></path></svg>
+</p>
+</div>
+<div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+<!-- Left: Content -->
+<div>
+<h3 class="text-3xl font-stem font-bold text-contrast mb-6">Luxury Meets Convenience</h3>
+<p class="text-lg font-lato text-gray-700 mb-6 leading-relaxed">
+                        Our state-of-the-art mobile grooming van brings a fully-equipped professional salon directly to your doorstep. No more stressful car rides or waiting rooms — just premium grooming in the comfort of your own home.
+                    </p>
+<div class="space-y-4">
+<!-- Feature 1 -->
+<div class="flex items-start gap-4 bg-background rounded-2xl p-5">
+<div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-stem font-bold text-contrast text-lg mb-1">Professional Equipment</h4>
+<p class="font-lato text-gray-600 text-sm">High-end grooming tools, hydraulic tables, and specialized dryers for every breed.</p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="flex items-start gap-4 bg-background rounded-2xl p-5">
+<div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-stem font-bold text-contrast text-lg mb-1">Climate Controlled</h4>
+<p class="font-lato text-gray-600 text-sm">Temperature-regulated environment ensuring your pet's comfort year-round.</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="flex items-start gap-4 bg-background rounded-2xl p-5">
+<div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-stem font-bold text-contrast text-lg mb-1">Premium Products</h4>
+<p class="font-lato text-gray-600 text-sm">Full stock of top-quality shampoos, conditioners, and specialized treatments.</p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="flex items-start gap-4 bg-background rounded-2xl p-5">
+<div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-stem font-bold text-contrast text-lg mb-1">Safety First</h4>
+<p class="font-lato text-gray-600 text-sm">Non-slip surfaces, secure restraints, and safety protocols for maximum protection.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Van Image -->
+<div class="relative">
+<div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Yofren Master Mobile Pet Grooming Van serving Broward and Naples" class="w-full h-[500px] object-cover" onerror="this.src='https://images.unsplash.com/photo-1581888227599-779811939961?w=800&amp;h=600&amp;fit=crop'" src="assets/images/van.jpg"/>
+</div>
+<!-- Floating badge -->
+<div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl z-20 max-w-xs">
+<div class="flex items-center gap-3">
+<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+<!-- Replaced Star Emoji -->
+<svg class="w-8 h-8 text-white" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+</svg>
+</div>
+<div>
+<p class="font-stem font-bold text-contrast text-lg">Fully Licensed</p>
+<p class="font-lato text-gray-600 text-sm">&amp; Insured</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Van Image Gallery -->
+<div class="grid md:grid-cols-3 gap-6">
+<div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
+<img alt="Van Interior with yofren master mobile pet grooming equipment" class="w-full h-64 object-cover hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1560807707-8cc77767d783?w=400&amp;h=300&amp;fit=crop'" src="assets/images/hero3.png"/>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
+<img alt="Professional Equipment Used by Yofren Master Pet Grooming" class="w-full h-64 object-cover hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&amp;h=300&amp;fit=crop'" src="assets/images/IMG_0085.webp"/>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
+<img alt="Van Exterior" class="w-full h-64 object-cover hover:scale-110 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&amp;h=300&amp;fit=crop'" src="assets/images/IMG_1315.webp"/>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 px-6 bg-gradient-to-br from-primary via-secondary to-background">
+<div class="container mx-auto max-w-4xl text-center">
+<h2 class="text-4xl md:text-5xl font-stem font-bold text-white mb-4">
+                Ready to Pamper Your Pet?
+            </h2>
+<p class="text-xl font-lato text-white mb-8">
+                Book your mobile grooming appointment today and give your pet the royal treatment!
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-white hover:bg-gray-100 text-contrast font-stem font-bold text-lg px-10 py-4 rounded-full shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-2" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+                    Book Your Appointment
+                </a>
+<a class="bg-contrast hover:bg-accent text-white font-stem font-bold text-lg px-10 py-4 rounded-full shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-2" href="tel:+17863200218">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+                    Call Us Now
+                </a>
+</div>
+</div>
+</section>
+<!-- ============================================ -->
+<!-- FOOTER                                      -->
+<!-- ============================================ -->
+<footer class="bg-contrast text-white relative overflow-hidden">
+<div class="container mx-auto px-6 relative z-10">
+<div class="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+<div class="lg:col-span-1">
+<div class="flex items-center gap-3 mb-4">
+<img alt="Yofren Master Pet Grooming Logo" class="h-10 w-auto object-contain brightness-0 invert" src="assets/images/Logo_PNG_6 (1).png"/>
+</div>
+<p class="font-lato text-gray-400 text-sm leading-relaxed mb-5">
+						Premium mobile pet grooming, bringing love, care, and professional grooming to your doorstep
+						since 2010.
+					</p>
+<div class="flex gap-2">
+<a class="w-9 h-9 rounded-lg bg-white/10 hover:bg-primary flex items-center justify-center transition-all duration-200" href="https://www.facebook.com/people/Yofren-Master-Pet-Grooming-FL/100090346147290/" target="_blank">
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+</svg>
+</a>
+<a class="w-9 h-9 rounded-lg bg-white/10 hover:bg-primary flex items-center justify-center transition-all duration-200" href="https://www.instagram.com/yofrenmpg1" target="_blank">
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-stem font-bold text-sm uppercase tracking-wider mb-4 text-white">Quick Links</h4>
+<ul class="space-y-2.5 font-lato text-sm">
+<li><a class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all duration-200 inline-block" href="index.html">Home</a>
+</li>
+<li><a class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all duration-200 inline-block" href="about.html">About
+								Us</a></li>
+<li><a class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all duration-200 inline-block" href="services.html">Services</a>
+</li>
+<li><a class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all duration-200 inline-block" href="locations.html">Locations</a>
+</li>
+<li><a class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all duration-200 inline-block" href="blog.html">Khai
+								Tips</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-stem font-bold text-sm uppercase tracking-wider mb-4 text-white">Company</h4>
+<ul class="space-y-2.5 font-lato text-sm">
+<li><a class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all duration-200 inline-block" href="franchise.html">Franchising</a>
+</li>
+<li><a class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all duration-200 inline-block" href="careers.html">Careers</a>
+</li>
+<li><a class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all duration-200 inline-block" href="#">Privacy
+								Policy</a></li>
+<li><a class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all duration-200 inline-block" href="#">Terms
+								&amp; Conditions</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-stem font-bold text-sm uppercase tracking-wider mb-4 text-white">Contact Us</h4>
+<ul class="space-y-3 font-lato text-sm">
+<li>
+<a class="flex items-center gap-2.5 text-gray-400 hover:text-primary transition-all duration-200 group" href="tel:+17863200218">
+<span class="w-8 h-8 rounded-lg bg-white/10 group-hover:bg-primary/20 flex items-center justify-center flex-shrink-0 transition">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+								(786) 320-0218
+							</a>
+</li>
+<li>
+<a class="flex items-start gap-2.5 text-gray-400 hover:text-primary transition-all duration-200 group" href="https://api.whatsapp.com/send/?phone=17863200218&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank">
+<span class="w-8 h-8 rounded-lg bg-white/10 group-hover:bg-primary/20 flex items-center justify-center flex-shrink-0 transition mt-0.5">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+								Message us on WhatsApp
+							</a>
+</li>
+<li>
+<div class="flex items-start gap-2.5 text-gray-400">
+<span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+								South Florida, USA
+							</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 py-5">
+<div class="flex flex-col md:flex-row justify-between items-center gap-3">
+<p class="font-lato text-gray-500 text-xs text-center md:text-left">© 2026 Yofren Master Pet
+						Grooming. All rights reserved.</p>
+<p class="font-lato text-gray-600 text-xs">Designed with <span class="text-primary">♥</span>
+						for pet lovers everywhere</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- WhatsApp Float Button -->
+<a aria-label="Contact us on WhatsApp" class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-[0_10px_40px_rgba(37,211,102,0.5)] transition-transform duration-300 hover:scale-110 hover:-translate-y-2 group" href="https://wa.me/17863200218?text=Hi!%20I'd%20like%20to%20book%20a%20grooming%20appointment%20for%20my%20pet" target="_blank">
+<!-- WhatsApp SVG Icon -->
+<svg class="w-9 h-9" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path>
+</svg>
+<!-- Tooltip que aparece al pasar el mouse -->
+<span class="absolute right-20 bg-white text-gray-800 text-sm font-lato font-bold px-4 py-2 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap border border-gray-100">
+           Chat with us!
+           <!-- Triángulo del tooltip -->
+<span class="absolute top-1/2 -right-2 transform -translate-y-1/2 w-0 h-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-white"></span>
+</span>
+</a>
+<!-- JavaScript for Tabs -->
+<script>
+        // Tab switching functionality
+        function switchTab(tabName) {
+            // Hide all tab contents
+            const allTabs = document.querySelectorAll('.tab-content');
+            allTabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            const allButtons = document.querySelectorAll('.tab-button');
+            allButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected tab
+            const selectedTab = document.getElementById(tabName + '-tab');
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+            
+            // Add active class to clicked button
+            // Fix: ensure we target the button even if clicked on children (like icon or span)
+            const btn = event.target.closest('.tab-button');
+            if (btn) {
+                btn.classList.add('active');
+            }
+        }
+        
+        // Mobile menu toggle (from previous pages)
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+<!-- Main JavaScript file -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
