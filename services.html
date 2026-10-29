@@ -239,7 +239,11 @@
 	</section>
 
 	<!-- Services Tabs Section -->
-	<section class="py-16 sm:py-24 px-6 bg-white relative overflow-hidden">
+			<!-- ============================================ -->
+	<!-- SERVICES                                     -->
+	<!-- ============================================ -->
+
+	<section id="services" class="py-16 sm:py-24 px-6 bg-white relative overflow-hidden">
 		<div class="absolute -top-24 -left-24 w-80 h-80 bg-secondary/60 rounded-full blur-3xl"></div>
 		<div class="absolute top-1/3 -right-32 w-96 h-96 bg-background rounded-full blur-3xl"></div>
 
@@ -253,120 +257,163 @@
 					Professional grooming, <span class="text-primary">brought to your door</span>
 				</h2>
 				<p class="text-base sm:text-lg font-lato text-gray-600 leading-relaxed">
-					Choose the grooming service that fits your pet. Every appointment is designed around comfort, cleanliness and personalized care.
+					Transparent pricing based on your pet's size and coat. Every appointment is designed around comfort, cleanliness and personalized care.
 				</p>
 			</div>
 
-			<div class="grid md:grid-cols-3 gap-8 lg:gap-10 items-start mb-10">
+			<!-- MAIN SERVICE CARDS -->
+			<div class="grid md:grid-cols-3 gap-8 lg:gap-10 items-start mb-16">
+
+				<!-- FULL GROOMING -->
 				<article class="services-staggered-card bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-xl">
 					<div class="relative overflow-hidden">
-						<img alt="Dog grooming service" class="services-staggered-image w-full" loading="lazy" src="assets/images/services/dogservice.webp">
+						<img alt="Full dog grooming service" class="services-staggered-image w-full" loading="lazy" src="assets/images/services/dogservice.webp">
 						<div class="absolute left-5 bottom-[-20px] w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg border-4 border-white">
-							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path d="M4.5 11.5c0-3.6 2.4-6.5 5.5-6.5 1.1 0 2.1.4 3 1.1.9-.7 1.9-1.1 3-1.1 3.1 0 5.5 2.9 5.5 6.5S17.1 18 13 18h-2c-4.1 0-6.5-2.9-6.5-6.5Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
-							</svg>
+							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.5 11.5c0-3.6 2.4-6.5 5.5-6.5 1.1 0 2.1.4 3 1.1.9-.7 1.9-1.1 3-1.1 3.1 0 5.5 2.9 5.5 6.5S17.1 18 13 18h-2c-4.1 0-6.5-2.9-6.5-6.5Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
 						</div>
 					</div>
-					<div class="p-5 sm:p-7 pt-7 sm:pt-9">
-						<h3 class="text-xl sm:text-2xl font-stem font-black text-contrast mb-2">Dog Grooming</h3>
-						<p class="font-lato text-gray-600 leading-relaxed mb-5">A complete grooming experience with bathing, haircut, nail care and more.</p>
-						<a class="inline-flex items-center gap-2 text-primary font-stem font-bold mb-6 hover:gap-3 transition-all" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank" rel="noopener noreferrer">Book Now <span>→</span></a>
-						<div class="flex items-center justify-between bg-secondary/60 rounded-full px-5 py-3">
-							<span class="font-lato font-semibold text-contrast text-sm">Starting at</span>
-							<span class="font-stem font-black text-2xl text-primary">$75</span>
+					<div class="p-5 sm:p-7 pt-9">
+						<h3 class="text-xl sm:text-2xl font-stem font-black text-contrast mb-2">Full Grooming</h3>
+						<p class="font-lato text-gray-600 leading-relaxed mb-5 text-sm">Bath, haircut, nail trim, ear cleaning, and blow-dry finish — the complete head-to-tail refresh.</p>
+
+						<div class="border-t border-gray-100 pt-3 mb-4">
+							<div class="flex items-center justify-between py-2.5 border-b border-gray-100">
+								<p class="font-stem font-semibold text-contrast text-sm">Small</p>
+								<span class="font-stem font-black text-primary text-lg">$85</span>
+							</div>
+							<div class="flex items-center justify-between py-2.5 border-b border-gray-100">
+								<p class="font-stem font-semibold text-contrast text-sm">Medium</p>
+								<span class="font-stem font-black text-primary text-lg">$120</span>
+							</div>
+							<div class="flex items-center justify-between py-2.5 border-b border-gray-100">
+								<p class="font-stem font-semibold text-contrast text-sm">Large</p>
+								<span class="font-stem font-black text-primary text-lg">$150</span>
+							</div>
+							<div class="flex items-center justify-between py-2.5 border-b border-gray-100">
+								<p class="font-stem font-semibold text-contrast text-sm">Extra Large</p>
+								<span class="font-stem font-black text-primary text-lg">$180</span>
+							</div>
+							<div class="flex items-center justify-between py-2.5">
+								<p class="font-stem font-semibold text-contrast text-sm">Double Extra Large</p>
+								<span class="font-stem font-black text-primary text-lg">$220</span>
+							</div>
 						</div>
+
+						<a class="inline-flex items-center gap-2 text-primary font-stem font-bold text-sm hover:gap-3 transition-all" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank" rel="noopener noreferrer">Book Now <span>→</span></a>
 					</div>
 				</article>
 
+				<!-- CAT GROOMING -->
 				<article class="services-staggered-card bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-xl">
 					<div class="relative overflow-hidden">
 						<img alt="Cat grooming service" class="services-staggered-image w-full" loading="lazy" src="assets/images/services/catservice.webp">
 						<div class="absolute left-5 bottom-[-20px] w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg border-4 border-white">
-							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path d="M6 9V4l4 3h4l4-3v5c0 5-2.7 8-6 8s-6-3-6-8Zm3 3h.01M15 12h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
-							</svg>
+							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 9V4l4 3h4l4-3v5c0 5-2.7 8-6 8s-6-3-6-8Zm3 3h.01M15 12h.01" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
 						</div>
 					</div>
-					<div class="p-5 sm:p-7 pt-7 sm:pt-9">
+					<div class="p-5 sm:p-7 pt-9">
 						<h3 class="text-xl sm:text-2xl font-stem font-black text-contrast mb-2">Cat Grooming</h3>
-						<p class="font-lato text-gray-600 leading-relaxed mb-5">Gentle grooming tailored to your feline friend, with a calm and comfortable approach.</p>
-						<a class="inline-flex items-center gap-2 text-primary font-stem font-bold mb-6 hover:gap-3 transition-all" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank" rel="noopener noreferrer">Book Now <span>→</span></a>
-						<div class="flex items-center justify-between bg-secondary/60 rounded-full px-5 py-3">
-							<span class="font-lato font-semibold text-contrast text-sm">Starting at</span>
-							<span class="font-stem font-black text-2xl text-primary">$65</span>
+						<p class="font-lato text-gray-600 leading-relaxed mb-5 text-sm">Gentle, one-on-one grooming tailored to your feline friend's comfort and coat.</p>
+
+						<div class="border-t border-gray-100 pt-3 mb-4">
+							<div class="flex items-center justify-between py-2.5 border-b border-gray-100">
+								<p class="font-stem font-semibold text-contrast text-sm">Full Grooming — Cat</p>
+								<span class="font-stem font-black text-primary text-lg">$160</span>
+							</div>
+							<div class="flex items-center justify-between py-2.5">
+								<p class="font-stem font-semibold text-contrast text-sm">Bath — Cat</p>
+								<span class="font-stem font-black text-primary text-lg">$130</span>
+							</div>
 						</div>
+
+						<a class="inline-flex items-center gap-2 text-primary font-stem font-bold text-sm hover:gap-3 transition-all" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank" rel="noopener noreferrer">Book Now <span>→</span></a>
 					</div>
 				</article>
 
+				<!-- SANITARY GROOMING -->
 				<article class="services-staggered-card bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-xl">
 					<div class="relative overflow-hidden">
-						<img alt="Pet boarding service" class="services-staggered-image w-full" loading="lazy" src="assets/images/services/boarding.webp">
+						<img alt="Sanitary grooming service" class="services-staggered-image w-full" loading="lazy" src="assets/images/services/boarding.webp">
 						<div class="absolute left-5 bottom-[-20px] w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg border-4 border-white">
-							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path d="m3 11 9-7 9 7v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
-								<path d="M9 21v-6h6v6" stroke-linecap="round" stroke-width="1.8"></path>
-							</svg>
+							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3l1.9 5.8H20l-4.9 3.6 1.9 5.8-5-3.6-5 3.6 1.9-5.8L4 8.8h6.1L12 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
 						</div>
 					</div>
-					<div class="p-5 sm:p-7 pt-7 sm:pt-9">
-						<h3 class="text-xl sm:text-2xl font-stem font-black text-contrast mb-2">Pet Boarding</h3>
-						<p class="font-lato text-gray-600 leading-relaxed mb-5">Comfortable care for pets who need a safe, attentive place while you're away.</p>
-						<a class="inline-flex items-center gap-2 text-primary font-stem font-bold mb-6 hover:gap-3 transition-all" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank" rel="noopener noreferrer">Book Now <span>→</span></a>
-						<div class="flex items-center justify-between bg-secondary/60 rounded-full px-5 py-3">
-							<span class="font-lato font-semibold text-contrast text-sm">Starting at</span>
-							<span class="font-stem font-black text-2xl text-primary">$55</span>
+					<div class="p-5 sm:p-7 pt-9">
+						<h3 class="text-xl sm:text-2xl font-stem font-black text-contrast mb-2">Sanitary Grooming</h3>
+						<p class="font-lato text-gray-600 leading-relaxed mb-5 text-sm">Focused clean-up of the sanitary areas — perfect between full grooms or for targeted care.</p>
+
+						<div class="border-t border-gray-100 pt-3 mb-4">
+							<div class="flex items-center justify-between py-2.5 border-b border-gray-100">
+								<p class="font-stem font-semibold text-contrast text-sm">Small</p>
+								<span class="font-stem font-black text-primary text-lg">$70</span>
+							</div>
+							<div class="flex items-center justify-between py-2.5 border-b border-gray-100">
+								<p class="font-stem font-semibold text-contrast text-sm">Medium</p>
+								<span class="font-stem font-black text-primary text-lg">$90</span>
+							</div>
+							<div class="flex items-center justify-between py-2.5 border-b border-gray-100">
+								<p class="font-stem font-semibold text-contrast text-sm">Large</p>
+								<span class="font-stem font-black text-primary text-lg">$120</span>
+							</div>
+							<div class="flex items-center justify-between py-2.5 border-b border-gray-100">
+								<p class="font-stem font-semibold text-contrast text-sm">Extra Large</p>
+								<span class="font-stem font-black text-primary text-lg">$150</span>
+							</div>
+							<div class="flex items-center justify-between py-2.5">
+								<p class="font-stem font-semibold text-contrast text-sm">Double Extra Large</p>
+								<span class="font-stem font-black text-primary text-lg">$180</span>
+							</div>
 						</div>
+
+						<a class="inline-flex items-center gap-2 text-primary font-stem font-bold text-sm hover:gap-3 transition-all" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank" rel="noopener noreferrer">Book Now <span>→</span></a>
 					</div>
 				</article>
+
 			</div>
 
-			<div class="text-center">
-				<p class="font-lato text-sm text-gray-500">Prices shown are placeholders — update them to your current service pricing.</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- Add-Ons Section -->
-	<section class="py-16 sm:py-24 px-6 bg-gradient-to-br from-background via-white to-secondary/30 relative overflow-hidden">
-		<div class="absolute -bottom-32 -left-20 w-96 h-96 bg-secondary/70 rounded-full blur-3xl"></div>
-
-		<div class="container mx-auto max-w-7xl relative z-10">
-			<div class="grid lg:grid-cols-[.85fr_1.7fr] gap-12 lg:gap-16 items-center">
-				<div class="lg:sticky lg:top-28">
-					<div class="inline-flex items-center gap-2 bg-white px-5 py-2 rounded-full mb-5 shadow-sm">
+			<!-- ADD-ONS -->
+			<div class="mt-12">
+				<div class="text-center mb-10">
+					<div class="inline-flex items-center gap-2 bg-white px-5 py-2 rounded-full mb-4 shadow-sm border border-primary/10">
 						<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
 						<span class="font-stem font-bold text-primary text-sm uppercase tracking-wider">Add-ons</span>
 					</div>
-					<h2 class="text-3xl sm:text-4xl md:text-5xl font-stem font-black text-contrast leading-tight mb-4">
-						Add a little <span class="text-primary">extra</span>
-					</h2>
-					<p class="text-lg sm:text-xl font-script text-accent mb-5">Make their grooming experience even better.</p>
-					<p class="font-lato text-gray-600 leading-relaxed max-w-md mb-7">Enhance your pet's appointment with optional services for extra care, comfort and maintenance.</p>
-					<a class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-green-600 text-white font-stem font-bold text-sm sm:text-base px-6 sm:px-7 py-3 sm:py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all" href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank">
-						Add to your booking <span>→</span>
-					</a>
+					<h3 class="text-2xl sm:text-3xl font-stem font-black text-contrast mb-2">Add a little <span class="text-primary">extra</span></h3>
+					<p class="font-lato text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">Optional treatments that make every visit count. Add them to any grooming appointment.</p>
 				</div>
 
-				<div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 items-start">
+				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+
 					<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
 						<div class="relative rounded-2xl overflow-hidden" style="aspect-ratio:4/3">
-							<img alt="Nail clipping add-on" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="assets/images/services/dog_nail_clippers.webp">
+							<img alt="Nail trimming add-on" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="assets/images/services/dog_nail_clippers.webp">
 						</div>
 						<div class="p-3 pt-4">
-							<h3 class="font-stem font-black text-lg text-contrast mb-1">Nail Clipping</h3>
+							<h4 class="font-stem font-black text-lg text-contrast mb-1">Nail Trimming</h4>
 							<p class="font-lato text-sm text-gray-600 mb-4">Keep nails healthy and at the right length.</p>
-							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$15</div>
+							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$20</div>
 						</div>
 					</article>
 
 					<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
 						<div class="relative rounded-2xl overflow-hidden" style="aspect-ratio:4/3">
-							<img alt="Flea and tick shampoo add-on" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="assets/images/services/2service.webp">
+							<img alt="Clipping nails add-on" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="assets/images/services/2service.webp">
 						</div>
 						<div class="p-3 pt-4">
-							<h3 class="font-stem font-black text-lg text-contrast mb-1">Flea &amp; Tick Shampoo</h3>
-							<p class="font-lato text-sm text-gray-600 mb-4">Extra protection for a cleaner, happier pet.</p>
-							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$20</div>
+							<h4 class="font-stem font-black text-lg text-contrast mb-1">Clipping Nails</h4>
+							<p class="font-lato text-sm text-gray-600 mb-4">Quick and clean clip for short, healthy nails.</p>
+							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$25</div>
+						</div>
+					</article>
+
+					<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
+						<div class="relative rounded-2xl overflow-hidden" style="aspect-ratio:4/3">
+							<img alt="Teeth brushing add-on" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="assets/images/services/dental.webp">
+						</div>
+						<div class="p-3 pt-4">
+							<h4 class="font-stem font-black text-lg text-contrast mb-1">Teeth Brushing</h4>
+							<p class="font-lato text-sm text-gray-600 mb-4">A quick oral refresh during grooming.</p>
+							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$5</div>
 						</div>
 					</article>
 
@@ -375,31 +422,9 @@
 							<img alt="Anal gland expression add-on" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="assets/images/services/anal.webp">
 						</div>
 						<div class="p-3 pt-4">
-							<h3 class="font-stem font-black text-lg text-contrast mb-1">Anal Gland Expression</h3>
+							<h4 class="font-stem font-black text-lg text-contrast mb-1">Anal Gland Expression</h4>
 							<p class="font-lato text-sm text-gray-600 mb-4">Professional care for your pet's comfort.</p>
-							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$15</div>
-						</div>
-					</article>
-
-					<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
-						<div class="relative rounded-2xl overflow-hidden" style="aspect-ratio:4/3">
-							<img alt="De-shedding treatment add-on" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="assets/images/services/desheding.webp">
-						</div>
-						<div class="p-3 pt-4">
-							<h3 class="font-stem font-black text-lg text-contrast mb-1">De-Shedding Treatment</h3>
-							<p class="font-lato text-sm text-gray-600 mb-4">Reduce loose hair with a thorough treatment.</p>
-							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$XX</div>
-						</div>
-					</article>
-
-					<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
-						<div class="relative rounded-2xl overflow-hidden" style="aspect-ratio:4/3">
-							<img alt="Deep dental cleaning add-on" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="assets/images/services/dental.webp">
-						</div>
-						<div class="p-3 pt-4">
-							<h3 class="font-stem font-black text-lg text-contrast mb-1">Deep Dental Cleaning</h3>
-							<p class="font-lato text-sm text-gray-600 mb-4">An extra level of oral care during grooming.</p>
-							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$XX</div>
+							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$10</div>
 						</div>
 					</article>
 
@@ -408,14 +433,50 @@
 							<img alt="Ear flushing add-on" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="assets/images/services/ear.webp">
 						</div>
 						<div class="p-3 pt-4">
-							<h3 class="font-stem font-black text-lg text-contrast mb-1">Ear Flushing</h3>
-							<p class="font-lato text-sm text-gray-600 mb-4">Deeper ear cleaning when extra care is needed.</p>
-							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$XX</div>
+							<h4 class="font-stem font-black text-lg text-contrast mb-1">Ear Flushing</h4>
+							<p class="font-lato text-sm text-gray-600 mb-4">Deeper ear cleaning for extra care.</p>
+							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$70</div>
 						</div>
 					</article>
+
+					<article class="addon-card bg-white rounded-[1.75rem] p-4 shadow-lg border border-gray-100">
+						<div class="relative rounded-2xl overflow-hidden" style="aspect-ratio:4/3">
+							<img alt="De-shedding brush out add-on" class="absolute inset-0 w-full h-full object-cover" loading="lazy" src="assets/images/services/desheding.webp">
+						</div>
+						<div class="p-3 pt-4">
+							<h4 class="font-stem font-black text-lg text-contrast mb-1">De-Shedding Brush Out</h4>
+							<p class="font-lato text-sm text-gray-600 mb-4">Reduce loose hair with a thorough brush.</p>
+							<div class="bg-secondary/60 rounded-full py-2 text-center font-stem font-black text-primary">+$20</div>
+						</div>
+					</article>
+
 				</div>
 			</div>
-			<p class="text-center font-lato text-xs text-gray-500 mt-10">Add-on prices marked +$XX are placeholders — replace them with your current prices.</p>
+
+			<!-- DENTAL DEEP CLEANING -->
+			<div class="mt-16 max-w-3xl mx-auto bg-white rounded-[2rem] shadow-lg border border-gray-100 overflow-hidden">
+				<div class="bg-gradient-to-br from-primary/10 to-secondary/20 px-6 sm:px-8 py-5 border-b border-primary/10">
+					<h3 class="font-stem font-black text-contrast text-xl sm:text-2xl">Dental Deep Cleaning</h3>
+					<p class="font-lato text-gray-600 text-sm mt-1">Anesthesia-free deep cleaning — available as an add-on to any grooming appointment.</p>
+				</div>
+				<div class="px-6 sm:px-8 py-4">
+					<div class="flex items-center justify-between py-3 border-b border-gray-100">
+						<p class="font-stem font-semibold text-contrast text-sm">Small Dog</p>
+						<span class="font-stem font-black text-primary text-xl">$220</span>
+					</div>
+					<div class="flex items-center justify-between py-3 border-b border-gray-100">
+						<p class="font-stem font-semibold text-contrast text-sm">Medium Dog</p>
+						<span class="font-stem font-black text-primary text-xl">$250</span>
+					</div>
+					<div class="flex items-center justify-between py-3">
+						<p class="font-stem font-semibold text-contrast text-sm">Large Dog</p>
+						<span class="font-stem font-black text-primary text-xl">$300</span>
+					</div>
+				</div>
+			</div>
+
+		
+
 		</div>
 	</section>
 
@@ -499,7 +560,7 @@
 
 				<div class="relative">
 					<div class="relative w-full rounded-3xl overflow-hidden shadow-2xl" style="aspect-ratio:4/3">
-						<img alt="Yofren Master Mobile Pet Grooming Van serving Broward and Naples" class="absolute inset-0 w-full h-full object-cover" src="assets/images/van.jpg" loading="lazy">
+						<img alt="Yofren Master Mobile Pet Grooming Van serving Broward and Naples" class="absolute inset-0 w-full h-full object-cover" src="assets/images/services/van0.webp" loading="lazy">
 					</div>
 					<div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl z-20 max-w-xs">
 						<div class="flex items-center gap-3">
