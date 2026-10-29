@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# AI search crawlers: allowed by default. To block one, add for example:
+# User-agent: GPTBot
+# Disallow: /
+
+Sitemap: https://yofrenpetgrooming.com/sitemap.xml

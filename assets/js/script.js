@@ -6,38 +6,59 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     /* -----------------------------------------
-       1. Mobile Menu Toggle
-    ----------------------------------------- */
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu    = document.getElementById('mobileMenu');
+   1. Mobile Menu Toggle (Hamburger ↔ X)
+----------------------------------------- */
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu    = document.getElementById('mobileMenu');
 
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', function () {
-            mobileMenu.classList.toggle('hidden');
+if (mobileMenuBtn && mobileMenu) {
+    const iconHamburger = mobileMenuBtn.querySelector('.icon-hamburger');
+    const iconClose     = mobileMenuBtn.querySelector('.icon-close');
 
-            // Swap hamburger ↔ X icon
-            const icon = mobileMenuBtn.querySelector('svg');
-            if (icon) {
-                const isOpen = !mobileMenu.classList.contains('hidden');
-                icon.innerHTML = isOpen
-                    ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>'
-                    : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
-            }
-        });
+    function setMenuOpen(isOpen) {
+        // Toggle visibility of the menu
+        mobileMenu.classList.toggle('hidden', !isOpen);
 
-        // Close menu when a link inside it is tapped
-        mobileMenu.querySelectorAll('a').forEach(function (link) {
-            link.addEventListener('click', function () {
-                mobileMenu.classList.add('hidden');
-                // Reset icon back to hamburger
-                const icon = mobileMenuBtn.querySelector('svg');
-                if (icon) {
-                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
-                }
-            });
-        });
+        // Swap icons
+        if (iconHamburger && iconClose) {
+            iconHamburger.classList.toggle('hidden', isOpen);
+            iconClose.classList.toggle('hidden', !isOpen);
+        }
+
+        // Update ARIA for accessibility
+        mobileMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        mobileMenuBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
     }
 
+    // Toggle menu on button click
+    mobileMenuBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        setMenuOpen(!isOpen);
+    });
+
+    // Close menu when a link inside it is tapped
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+            setMenuOpen(false);
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function (e) {
+        if (mobileMenu.classList.contains('hidden')) return;
+        if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+            setMenuOpen(false);
+        }
+    });
+
+    // Close menu on Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+            setMenuOpen(false);
+        }
+    });
+}
     /* -----------------------------------------
        2. Smooth Scroll for Anchor Links
     ----------------------------------------- */

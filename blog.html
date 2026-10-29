@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Yofren Master Pet Grooming</title>
     <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/ico" href="assets/images/icon-yofren.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon-yofren.ico">
     <meta name="description"
         content="Tips, stories, and insights from the Yofren Master Pet Grooming team — for pet lovers across South Florida.">
-    <link rel="canonical" href="https://services.yofrenmasterpetgrooming.com/blog.html">
+    <link rel="canonical" href="https://yofrenpetgrooming.com/blog.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yofrenpetgrooming.com/blog.html">
+    <meta property="og:title" content="Blog | Yofren Master Pet Grooming">
+    <meta property="og:description"
+        content="Tips, stories, and insights from the Yofren Master Pet Grooming team — for pet lovers across South Florida.">
+    <meta property="og:image" content="https://yofrenpetgrooming.com/assets/images/blog/blog1.webp">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog | Yofren Master Pet Grooming">
+    <meta name="twitter:description"
+        content="Tips, stories, and insights from the Yofren Master Pet Grooming team — for pet lovers across South Florida.">
+    <meta name="twitter:image" content="https://yofrenpetgrooming.com/assets/images/blog/blog1.webp">
 
     <link rel="stylesheet" href="assets/css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +51,12 @@
         #mainNav .nav-link:hover {
             color: #77BD00;
             background: rgba(119, 189, 0, 0.05);
+        }
+
+        #mainNav .nav-link.active-page {
+            color: #77BD00 !important;
+            background: rgba(119, 189, 0, 0.08);
+            border-radius: 8px;
         }
 
         #mainNav .nav-phone {
@@ -91,33 +112,6 @@
             transition: transform 0.5s ease;
         }
 
-        /* Featured card */
-        .featured-card:hover .featured-img {
-            transform: scale(1.03);
-        }
-
-        .featured-img {
-            transition: transform 0.5s ease;
-        }
-
-        /* Skeleton loader */
-        @keyframes shimmer {
-            0% {
-                background-position: -400px 0
-            }
-
-            100% {
-                background-position: 400px 0
-            }
-        }
-
-        .skeleton {
-            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-            background-size: 400px 100%;
-            animation: shimmer 1.4s ease infinite;
-            border-radius: 8px;
-        }
-
         /* Category pill */
         .cat-pill {
             display: inline-block;
@@ -132,7 +126,6 @@
 
         /* Paw deco */
         @keyframes floatSlow {
-
             0%,
             100% {
                 transform: translateY(0) rotate(0deg)
@@ -176,11 +169,6 @@
             border-color: #77BD00;
             color: #77BD00;
         }
-
-        /* Empty state */
-        #emptyState {
-            display: none;
-        }
     </style>
 </head>
 
@@ -198,11 +186,9 @@
                     (786) 320-0218
                 </a>
                 <span class="hidden sm:inline text-white/30">|</span>
-                <span class="hidden sm:inline items-center gap-1.5">Serving South Florida since 2010</span>
+                <span class="hidden sm:inline">Serving South Florida for more than 10 years</span>
             </div>
             <div class="flex items-center gap-4 font-lato">
-                <a href="careers.html" class="hover:text-primary transition">Careers</a>
-                <span class="text-white/30">|</span>
                 <a href="franchise.html" class="hover:text-primary transition">Franchising</a>
             </div>
         </div>
@@ -212,7 +198,7 @@
     <nav id="mainNav" class="sticky top-0 z-50">
         <div class="container mx-auto px-6">
             <div class="flex items-center justify-between h-16">
-                <a href="index.html"><img src="assets/images/Yofren_Logo_1 (1).png" alt="Yofren Master Pet Grooming"
+                <a href="index.html"><img src="assets/images/Yofren_Logo(1).png" alt="Yofren Master Pet Grooming"
                         class="h-11 w-auto object-contain hover:opacity-80 transition"></a>
                 <div class="hidden md:flex items-center flex-1 justify-center">
                     <ul class="flex items-center gap-0.5 font-lato font-medium text-sm flex-wrap justify-center">
@@ -236,7 +222,7 @@
                         class="bg-primary hover:bg-green-600 text-white font-stem font-bold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition transform hover:scale-105">Book
                         Now</a>
                 </div>
-                <button id="mobileMenuBtn" class="nav-mobile-btn md:hidden p-1">
+                <button id="mobileMenuBtn" class="nav-mobile-btn md:hidden p-1 flex-shrink-0">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16" />
@@ -261,7 +247,8 @@
                         <li><a href="blog.html"
                                 class="block px-3 py-2.5 rounded-lg bg-primary/5 text-primary font-semibold">Blog</a>
                         </li>
-                        <li><a href="contact.html" class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Contact</a>
+                        <li><a href="contact.html"
+                                class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Contact</a>
                         </li>
                     </ul>
                     <a href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank"
@@ -273,8 +260,11 @@
     </nav>
 
     <!-- ===== PAGE HEADER ===== -->
-    <section class="pt-14 pb-10 px-6 bg-gradient-to-br from-background via-background to-secondary/20 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl -translate-y-1/3 translate-x-1/4"></div>
+    <section
+        class="pt-14 pb-10 px-6 bg-gradient-to-br from-background via-background to-secondary/20 relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl -translate-y-1/3 translate-x-1/4">
+        </div>
         <div class="absolute bottom-0 left-10 w-56 h-56 bg-pink-400/10 rounded-full blur-3xl"></div>
         <div class="absolute top-0 right-0 w-64 h-64 opacity-[0.08] deco-float hidden lg:block rotate-[8deg]">
             <svg fill="currentColor" class="text-primary w-full h-full" viewBox="0 0 1024 1024">
@@ -298,7 +288,8 @@
             </div>
             <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
                 <div>
-                    <div class="inline-flex items-center gap-2 bg-primary px-4 py-1.5 rounded-full mb-3 shadow-lg shadow-primary/20">
+                    <div
+                        class="inline-flex items-center gap-2 bg-primary px-4 py-1.5 rounded-full mb-3 shadow-lg shadow-primary/20">
                         <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                         <span class="font-stem font-bold text-white text-xs uppercase tracking-wide">Our Blog</span>
                     </div>
@@ -307,12 +298,11 @@
                     </h1>
                     <p class="font-script text-accent text-xl mt-2">From our groomers to you</p>
                 </div>
-                <!-- Category filters -->
                 <div id="filterWrap" class="flex gap-2 flex-wrap">
-                    <button class="filter-tab active" data-cat="all">All Posts</button>
-                    <button class="filter-tab" data-cat="grooming tips">Grooming Tips</button>
-                    <button class="filter-tab" data-cat="pet care">Pet Care</button>
-                    <button class="filter-tab" data-cat="seasonal">Seasonal</button>
+                    <button class="filter-tab active" data-cat="all" aria-pressed="true">All Posts</button>
+                    <button class="filter-tab" data-cat="grooming tips" aria-pressed="false">Grooming Tips</button>
+                    <button class="filter-tab" data-cat="pet care" aria-pressed="false">Pet Care</button>
+                    <button class="filter-tab" data-cat="seasonal" aria-pressed="false">Seasonal</button>
                 </div>
             </div>
         </div>
@@ -326,14 +316,14 @@
                 <!-- ── FEED (left) ── -->
                 <div class="flex-1 min-w-0">
 
-                    <!-- Skeletons -->
                     <!-- Featured post -->
-                    <div class="mb-6 reveal">
-                        <a href="blog-post.html?slug=5-signs-overdue-groom" class="post-card group flex flex-col sm:flex-row rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-shadow duration-300 bg-white">
+                    <div id="featuredPost" class="mb-6 reveal">
+                        <a href="blog-post.html?slug=5-signs-overdue-groom" data-cat="grooming tips"
+                            class="post-card group flex flex-col sm:flex-row rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-shadow duration-300 bg-white">
                             <div class="relative overflow-hidden sm:w-64 h-52 sm:h-auto flex-shrink-0">
-                                <img src="assets/images/blog/featured.jpg" alt="5 Signs Your Dog Is Overdue for a Groom"
+                                <img src="assets/images/blog/blog1.webp" alt="5 Signs Your Dog Is Overdue for a Groom"
                                     class="card-img w-full h-full object-cover"
-                                    onerror="this.src='https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=480&fit=crop'">
+                                    fetchpriority="high">
                                 <div class="absolute top-3 left-3 flex gap-1.5">
                                     <span class="cat-pill bg-primary text-white">Grooming Tips</span>
                                     <span class="cat-pill bg-contrast/80 text-white">Featured</span>
@@ -341,11 +331,19 @@
                             </div>
                             <div class="flex flex-col justify-center p-6 flex-1">
                                 <p class="font-lato text-gray-400 text-xs mb-2">September 2026</p>
-                                <h2 class="font-stem font-black text-contrast text-xl leading-snug mb-3 group-hover:text-primary transition-colors">5 Signs Your Dog Is Overdue for a Groom</h2>
-                                <p class="font-lato text-gray-500 text-sm leading-relaxed line-clamp-3 mb-4">From matting to that unmistakable "wet dog" smell that won't go away — here's how to tell it's time to book, before it becomes a bigger (and pricier) problem.</p>
-                                <span class="inline-flex items-center gap-1.5 text-primary font-stem font-bold text-sm group-hover:gap-3 transition-all">
+                                <h2
+                                    class="font-stem font-black text-contrast text-xl leading-snug mb-3 group-hover:text-primary transition-colors">
+                                    5 Signs Your Dog Is Overdue for a Groom</h2>
+                                <p class="font-lato text-gray-500 text-sm leading-relaxed line-clamp-3 mb-4">From
+                                    matting to that unmistakable "wet dog" smell that won't go away — here's how to tell
+                                    it's time to book, before it becomes a bigger (and pricier) problem.</p>
+                                <span
+                                    class="inline-flex items-center gap-1.5 text-primary font-stem font-bold text-sm group-hover:gap-3 transition-all">
                                     Read article
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
                                 </span>
                             </div>
                         </a>
@@ -354,88 +352,128 @@
                     <!-- Posts feed (stacked) -->
                     <div id="postsGrid" class="space-y-5">
 
-                        <a href="blog-post.html?slug=cage-free-grooming-anxious-pets" data-cat="pet care" class="post-card reveal group flex flex-col sm:flex-row rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300">
+                        <a href="blog-post.html?slug=cage-free-grooming-anxious-pets" data-cat="pet care"
+                            class="post-card reveal group flex flex-col sm:flex-row rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300">
                             <div class="overflow-hidden sm:w-48 h-44 sm:h-auto flex-shrink-0">
-                                <img src="assets/images/blog/cage-free.jpg" alt="Why Cage-Free Grooming Matters for Anxious Pets"
+                                <img src="assets/images/blog/blog2.webp"
+                                    alt="Why Cage-Free Grooming Matters for Anxious Pets"
                                     class="card-img w-full h-full object-cover"
-                                    onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop'">
+                                    loading="lazy">
                             </div>
                             <div class="flex flex-col justify-center p-5 flex-1">
                                 <div class="flex items-center gap-2 mb-2">
                                     <span class="cat-pill bg-cyan-500/10 text-cyan-600">Pet Care</span>
                                     <span class="font-lato text-gray-400 text-xs">August 2026</span>
                                 </div>
-                                <h3 class="font-stem font-bold text-contrast text-base leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">Why Cage-Free Grooming Matters for Anxious Pets</h3>
-                                <p class="font-lato text-gray-500 text-sm leading-relaxed line-clamp-2 mb-3">Cages and crowded waiting rooms can turn grooming day into a source of dread. Here's how one-on-one, cage-free care changes the experience.</p>
-                                <span class="inline-flex items-center gap-1 text-primary font-stem font-bold text-xs group-hover:gap-2 transition-all mt-auto">
+                                <h3
+                                    class="font-stem font-bold text-contrast text-base leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                                    Why Cage-Free Grooming Matters for Anxious Pets</h3>
+                                <p class="font-lato text-gray-500 text-sm leading-relaxed line-clamp-2 mb-3">Cages and
+                                    crowded waiting rooms can turn grooming day into a source of dread. Here's how
+                                    one-on-one, cage-free care changes the experience.</p>
+                                <span
+                                    class="inline-flex items-center gap-1 text-primary font-stem font-bold text-xs group-hover:gap-2 transition-all mt-auto">
                                     Read more
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
                                 </span>
                             </div>
                         </a>
 
-                        <a href="blog-post.html?slug=summer-coat-care-florida-heat" data-cat="seasonal" class="post-card reveal group flex flex-col sm:flex-row rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300" style="transition-delay:0.1s">
+                        <a href="blog-post.html?slug=summer-coat-care-florida-heat" data-cat="seasonal"
+                            class="post-card reveal group flex flex-col sm:flex-row rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300"
+                            style="transition-delay:0.1s">
                             <div class="overflow-hidden sm:w-48 h-44 sm:h-auto flex-shrink-0">
-                                <img src="assets/images/blog/summer-coat.jpg" alt="Summer Coat Care in Florida Heat"
+                                <img src="assets/images/blog/blog3.webp" alt="Summer Coat Care in Florida Heat"
                                     class="card-img w-full h-full object-cover"
-                                    onerror="this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop'">
+                                    loading="lazy">
                             </div>
                             <div class="flex flex-col justify-center p-5 flex-1">
                                 <div class="flex items-center gap-2 mb-2">
                                     <span class="cat-pill bg-orange-400/10 text-orange-500">Seasonal</span>
                                     <span class="font-lato text-gray-400 text-xs">July 2026</span>
                                 </div>
-                                <h3 class="font-stem font-bold text-contrast text-base leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">Summer Coat Care: Keeping Your Pet Cool in Florida Heat</h3>
-                                <p class="font-lato text-gray-500 text-sm leading-relaxed line-clamp-2 mb-3">South Florida summers are brutal on fur. Here's what actually helps your pet stay cool — and what grooming myths to skip.</p>
-                                <span class="inline-flex items-center gap-1 text-primary font-stem font-bold text-xs group-hover:gap-2 transition-all mt-auto">
+                                <h3
+                                    class="font-stem font-bold text-contrast text-base leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                                    Summer Coat Care: Keeping Your Pet Cool in Florida Heat</h3>
+                                <p class="font-lato text-gray-500 text-sm leading-relaxed line-clamp-2 mb-3">South
+                                    Florida summers are brutal on fur. Here's what actually helps your pet stay cool —
+                                    and what grooming myths to skip.</p>
+                                <span
+                                    class="inline-flex items-center gap-1 text-primary font-stem font-bold text-xs group-hover:gap-2 transition-all mt-auto">
                                     Read more
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
                                 </span>
                             </div>
                         </a>
 
-                        <a href="blog-post.html?slug=cat-grooming-101" data-cat="grooming tips" class="post-card reveal group flex flex-col sm:flex-row rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300" style="transition-delay:0.2s">
+                        <a href="blog-post.html?slug=cat-grooming-101" data-cat="grooming tips"
+                            class="post-card reveal group flex flex-col sm:flex-row rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300"
+                            style="transition-delay:0.2s">
                             <div class="overflow-hidden sm:w-48 h-44 sm:h-auto flex-shrink-0">
-                                <img src="assets/images/blog/cat-101.jpg" alt="Cat Grooming 101"
+                                <img src="assets/images/blog/blog4.webp" alt="Cat Grooming 101"
                                     class="card-img w-full h-full object-cover"
-                                    onerror="this.src='https://images.unsplash.com/photo-1519052537078-e6302a4968d4?w=400&h=400&fit=crop'">
+                                    loading="lazy">
                             </div>
                             <div class="flex flex-col justify-center p-5 flex-1">
                                 <div class="flex items-center gap-2 mb-2">
                                     <span class="cat-pill bg-primary/10 text-primary">Grooming Tips</span>
                                     <span class="font-lato text-gray-400 text-xs">June 2026</span>
                                 </div>
-                                <h3 class="font-stem font-bold text-contrast text-base leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">Cat Grooming 101: What Most Owners Get Wrong</h3>
-                                <p class="font-lato text-gray-500 text-sm leading-relaxed line-clamp-2 mb-3">Yes, cats need grooming too. Here's why "cats clean themselves" isn't the whole story — especially for long-haired breeds.</p>
-                                <span class="inline-flex items-center gap-1 text-primary font-stem font-bold text-xs group-hover:gap-2 transition-all mt-auto">
+                                <h3
+                                    class="font-stem font-bold text-contrast text-base leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                                    Cat Grooming 101: What Most Owners Get Wrong</h3>
+                                <p class="font-lato text-gray-500 text-sm leading-relaxed line-clamp-2 mb-3">Yes, cats
+                                    need grooming too. Here's why "cats clean themselves" isn't the whole story —
+                                    especially for long-haired breeds.</p>
+                                <span
+                                    class="inline-flex items-center gap-1 text-primary font-stem font-bold text-xs group-hover:gap-2 transition-all mt-auto">
                                     Read more
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
                                 </span>
                             </div>
                         </a>
 
-                        <a href="blog-post.html?slug=prep-home-before-groomer" data-cat="pet care" class="post-card reveal group flex flex-col sm:flex-row rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300" style="transition-delay:0.3s">
+                        <a href="blog-post.html?slug=prep-home-before-groomer" data-cat="pet care"
+                            class="post-card reveal group flex flex-col sm:flex-row rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300"
+                            style="transition-delay:0.3s">
                             <div class="overflow-hidden sm:w-48 h-44 sm:h-auto flex-shrink-0">
-                                <img src="assets/images/blog/prep-home.jpg" alt="How to Prep Your Home Before the Groomer Arrives"
+                                <img src="assets/images/blog/blog5.webp"
+                                    alt="How to Prep Your Home Before the Groomer Arrives"
                                     class="card-img w-full h-full object-cover"
-                                    onerror="this.src='https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop'">
+                                    loading="lazy">
                             </div>
                             <div class="flex flex-col justify-center p-5 flex-1">
                                 <div class="flex items-center gap-2 mb-2">
                                     <span class="cat-pill bg-cyan-500/10 text-cyan-600">Pet Care</span>
                                     <span class="font-lato text-gray-400 text-xs">May 2026</span>
                                 </div>
-                                <h3 class="font-stem font-bold text-contrast text-base leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">How to Prep Your Home Before the Groomer Arrives</h3>
-                                <p class="font-lato text-gray-500 text-sm leading-relaxed line-clamp-2 mb-3">A few small steps before we pull up can make your pet's appointment faster, calmer, and even more affordable.</p>
-                                <span class="inline-flex items-center gap-1 text-primary font-stem font-bold text-xs group-hover:gap-2 transition-all mt-auto">
+                                <h3
+                                    class="font-stem font-bold text-contrast text-base leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                                    How to Prep Your Home Before the Groomer Arrives</h3>
+                                <p class="font-lato text-gray-500 text-sm leading-relaxed line-clamp-2 mb-3">A few small
+                                    steps before we pull up can make your pet's appointment faster, calmer, and even
+                                    more affordable.</p>
+                                <span
+                                    class="inline-flex items-center gap-1 text-primary font-stem font-bold text-xs group-hover:gap-2 transition-all mt-auto">
                                     Read more
-                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
                                 </span>
                             </div>
                         </a>
 
                     </div>
-
 
                 </div>
 
@@ -523,7 +561,7 @@
                         </svg>
                         <h3 class="font-stem font-bold text-contrast text-sm mb-1">Book a Grooming</h3>
                         <p class="font-lato text-gray-400 text-xs mb-4">Stress-free, at your doorstep.</p>
-                        <a href="https://api.whatsapp.com/send/?phone=17863200218&text&type=phone_number&app_absent=0"
+                        <a href="https://wa.me/17863200218?text=Hi!%20I'd%20like%20to%20book%20a%20grooming%20appointment"
                             target="_blank"
                             class="block bg-[#25D366] hover:bg-[#128C7E] text-white font-stem font-bold text-sm px-5 py-2.5 rounded-full transition transform hover:scale-105">
                             Book via WhatsApp
@@ -535,17 +573,15 @@
         </div>
     </section>
 
-
-
     <!-- ===== FOOTER ===== -->
     <footer class="bg-contrast text-white">
         <div class="container mx-auto px-6">
             <div class="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
                 <div>
-                    <img src="assets/images/Logo_PNG_6 (1).png" alt="Yofren"
+                    <img src="assets/images/Logo_PNG(1).png" alt="Yofren"
                         class="h-10 w-auto object-contain brightness-0 invert mb-4">
                     <p class="font-lato text-gray-400 text-sm leading-relaxed mb-5">Premium mobile pet grooming —
-                        bringing love, care, and professional grooming right to your doorstep since 2010.</p>
+                        bringing love, care, and professional grooming right to your doorstep for more than 10 years.</p>
                     <div class="flex gap-2">
                         <a href="https://www.facebook.com/people/Yofren-Master-Pet-Grooming-FL/100090346147290/"
                             target="_blank"
@@ -586,14 +622,13 @@
                     <h4 class="font-stem font-bold text-sm uppercase tracking-wider mb-4">Company</h4>
                     <ul class="space-y-2.5 font-lato text-sm">
                         <li><a href="franchise.html"
-                                class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all inline-block">Franchising</a></li>
-                        <li><a href="careers.html"
-                                class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all inline-block">Careers</a>
+                                class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all inline-block">Franchising</a>
                         </li>
-                        <li><a href="#"
+
+                        <li><a href="privacy-policy.html"
                                 class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all inline-block">Privacy
                                 Policy</a></li>
-                        <li><a href="#"
+                        <li><a href="terms-conditions.html"
                                 class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all inline-block">Terms
                                 &amp; Conditions</a></li>
                     </ul>
@@ -611,7 +646,7 @@
                                     </svg></span>
                                 (786) 320-0218
                             </a></li>
-                        <li><a href="https://api.whatsapp.com/send/?phone=17863200218&text&type=phone_number&app_absent=0"
+                        <li><a href="https://wa.me/17863200218?text=Hi!%20I'd%20like%20to%20book%20a%20grooming%20appointment"
                                 target="_blank"
                                 class="flex items-start gap-2.5 text-gray-400 hover:text-primary transition group">
                                 <span
@@ -641,14 +676,13 @@
             <div class="border-t border-white/10 py-5 flex flex-col md:flex-row justify-between items-center gap-3">
                 <p class="font-lato text-gray-500 text-xs">&copy; 2026 Yofren Master Pet Grooming. All rights reserved.
                 </p>
-                <p class="font-lato text-gray-600 text-xs">Designed with <span class="text-primary">&hearts;</span> for
-                    pet lovers everywhere</p>
+                <p class="font-lato text-gray-600 text-xs">Designed by <span class="text-primary">&hearts;</span> Creative Agency Brands</p>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Float -->
-    <a href="https://api.whatsapp.com/send/?phone=17863200218&text&type=phone_number&app_absent=0"
+    <a href="https://wa.me/17863200218?text=Hi!%20I'd%20like%20to%20book%20a%20grooming%20appointment"
         class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-[0_10px_40px_rgba(37,211,102,0.5)] transition-transform duration-300 hover:scale-110 hover:-translate-y-2 group"
         target="_blank" aria-label="WhatsApp">
         <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24">
@@ -663,31 +697,38 @@
         </span>
     </a>
 
+    <script src="assets/js/script.js"></script>
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
-            document.getElementById('mobileMenu').classList.toggle('hidden');
-        });
-
-        // Category filter (client-side show/hide)
+        // Category filter — includes featured post and updates aria-pressed
         const filterWrap = document.getElementById('filterWrap');
+        const featured = document.getElementById('featuredPost');
+        const cards = document.querySelectorAll('#postsGrid a[data-cat]');
+
         filterWrap.addEventListener('click', e => {
             const tab = e.target.closest('.filter-tab');
             if (!tab) return;
-            filterWrap.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+
+            filterWrap.querySelectorAll('.filter-tab').forEach(t => {
+                t.classList.remove('active');
+                t.setAttribute('aria-pressed', 'false');
+            });
             tab.classList.add('active');
+            tab.setAttribute('aria-pressed', 'true');
+
             const sel = tab.dataset.cat;
-            document.querySelectorAll('#postsGrid a[data-cat]').forEach(card => {
+
+            // Featured post
+            if (featured) {
+                const featuredLink = featured.querySelector('a[data-cat]');
+                const showFeatured = sel === 'all' || (featuredLink && featuredLink.dataset.cat === sel);
+                featured.style.display = showFeatured ? '' : 'none';
+            }
+
+            // Grid cards
+            cards.forEach(card => {
                 card.style.display = (sel === 'all' || card.dataset.cat === sel) ? '' : 'none';
             });
         });
-
-        // Reveal on scroll
-        const obs = new IntersectionObserver(
-            e => e.forEach(x => x.isIntersecting && x.target.classList.add('revealed')),
-            { threshold: 0.08 }
-        );
-        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
     </script>
 </body>
 
