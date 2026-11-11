@@ -277,7 +277,10 @@
 		@media (min-width: 640px) {
 			.cta-btn { width: auto; max-width: none; padding: 1rem 2.5rem; font-size: 1.125rem; }
 		}
-	</style>
+			#mainNav .nav-link.active-page { color: #77BD00 !important; background: rgba(119, 189, 0, 0.08); border-radius: 8px; }
+		#mainNav.nav-scrolled .nav-link.active-page { color: #77BD00 !important; background: rgba(119, 189, 0, 0.08); }
+		/* Tablet: 8 nav links don't fit, use the hamburger menu up to 1024px */@media (min-width:768px) and (max-width:1023.98px){#mainNav .hidden.md\:flex{display:none!important}#mainNav #mobileMenuBtn{display:block!important}#mainNav #mobileMenu:not(.hidden){display:block!important}}
+</style>
 	<noscript>
 		<style>
 			.reveal {
@@ -305,8 +308,8 @@
 				<span class="hidden sm:inline items-center gap-1.5">Serving South Florida since 2010</span>
 			</div>
 			<div class="flex items-center gap-4 font-lato">
-				<a href="franchise.html" class="hover:text-primary transition">Franchising</a>
-			</div>
+				<a href="academy.html" class="hover:text-primary transition">Academy</a>
+				<a href="franchise.html" class="hover:text-primary transition">Franchising</a>			</div>
 		</div>
 	</div>
 
@@ -327,6 +330,8 @@
 						<li><a href="about.html" class="nav-link px-3 py-2 block">About Us</a></li>
 						<li><a href="services.html" class="nav-link px-3 py-2 block">Services</a></li>
 						<li><a href="locations.html" class="nav-link px-3 py-2 block">Locations</a></li>
+						<li><a href="academy.html" class="nav-link px-3 py-2 block">Academy</a></li>
+						<li><a href="franchise.html" class="nav-link active-page px-3 py-2 block">Franchising</a></li>
 						<li><a href="blog.html" class="nav-link px-3 py-2 block">Blog</a></li>
 						<li><a href="contact.html" class="nav-link px-3 py-2 block">Contact</a></li>
 					</ul>
@@ -368,6 +373,12 @@
 						</li>
 						<li><a href="locations.html"
 								class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Locations</a>
+						</li>
+						<li><a href="academy.html"
+								class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Academy</a>
+						</li>
+						<li><a href="franchise.html"
+								class="block px-3 py-2.5 rounded-lg bg-primary/5 text-primary font-semibold">Franchising</a>
 						</li>
 						<li><a href="blog.html"
 								class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Blog</a>
@@ -544,10 +555,9 @@
 			<div class="grid lg:grid-cols-2 gap-12 items-center reveal">
 				<div class="relative">
 					<div class="rounded-3xl overflow-hidden shadow-2xl">
-						<img src="assets/images/franchising/opportunity.jpg"
+						<img src="assets/images/franchise/1.webp"
 							alt="Franchise owner managing mobile grooming business"
-							class="w-full owner-img object-cover" loading="lazy"
-							onerror="this.onerror=null;this.src='assets/images/why-choose-us.webp'">
+							class="w-full owner-img object-cover" loading="lazy">
 					</div>
 					<div class="absolute -bottom-5 -right-5 w-28 h-28 bg-primary rounded-full opacity-20 blur-xl"></div>
 					<div class="absolute -top-5 -left-5 w-20 h-20 bg-secondary rounded-full opacity-20 blur-xl"></div>
@@ -1011,6 +1021,9 @@
 				<div>
 					<h4 class="font-stem font-bold text-sm uppercase tracking-wider mb-4 text-white">Company</h4>
 					<ul class="space-y-2.5 font-lato text-sm">
+						<li><a href="academy.html"
+								class="text-gray-400 hover:text-primary hover:translate-x-1 transition-all duration-200 inline-block">Grooming Academy</a>
+						</li>
 						<li><a href="franchise.html"
 								class="text-primary hover:text-secondary hover:translate-x-1 transition-all duration-200 inline-block font-semibold">Franchising</a>
 						</li>

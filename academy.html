@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grooming Academy | Yofren Master Pet Grooming</title>
+	<meta name="robots" content="index, follow">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="assets/images/icon-yofren.ico">
+
+	<!-- SEO -->
+	<meta name="description"
+		content="Yofren Master Pet Grooming Academy in Miami, FL. A professional dog grooming program: hands-on technique with real dogs, client communication, marketing and customer service.">
+	<link rel="canonical" href="https://yofrenpetgrooming.com/academy.html">
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://yofrenpetgrooming.com/academy.html">
+	<meta property="og:title" content="Grooming Academy | Yofren Master Pet Grooming">
+	<meta property="og:description"
+		content="Become a professional dog groomer. Hands-on training, client communication, marketing and customer service — taught by working groomers in Miami, FL.">
+	<meta property="og:image" content="https://yofrenpetgrooming.com/assets/images/academy/instructors.webp">
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Grooming Academy | Yofren Master Pet Grooming">
+	<meta name="twitter:description"
+		content="Become a professional dog groomer. Hands-on training, client communication, marketing and customer service — taught by working groomers in Miami, FL.">
+	<meta name="twitter:image" content="https://yofrenpetgrooming.com/assets/images/academy/instructors.webp">
+
+	<link rel="stylesheet" href="assets/css/tailwind.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@600;700;800;900&family=Dancing+Script:wght@400;600;700&display=swap"
+		rel="stylesheet">
+
+	<style>
+		html { scroll-behavior: smooth; }
+		body { font-family: 'Lato', sans-serif; color: #3E180C; }
+
+		/* ---------- NAV (same behavior as the rest of the site) ---------- */
+		#mainNav .nav-logo { filter: none; transition: filter .3s ease; }
+		#mainNav .nav-link { color: white; transition: color .3s ease; }
+		#mainNav .nav-link:hover { color: #77BD00; background: rgba(255,255,255,.1); }
+		#mainNav .nav-phone { color: white; border-color: rgba(255,255,255,.3); transition: all .3s ease; }
+		#mainNav .nav-phone:hover { background: #77BD00; border-color: #77BD00; }
+		#mainNav .nav-mobile-btn { color: white; transition: color .3s ease; }
+		#mainNav.nav-scrolled {
+			background: rgba(255,255,255,.97); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+			box-shadow: 0 1px 3px rgba(0,0,0,.08); border-bottom: 1px solid rgba(0,0,0,.05);
+		}
+		#mainNav.nav-scrolled .nav-link { color: #3E180C; }
+		#mainNav.nav-scrolled .nav-link:hover { color: #77BD00; background: rgba(119,189,0,.05); }
+		#mainNav.nav-scrolled .nav-phone { color: #3E180C; border-color: #e5e7eb; }
+		#mainNav.nav-scrolled .nav-phone:hover { color: white; background: #77BD00; border-color: #77BD00; }
+		#mainNav.nav-scrolled .nav-mobile-btn { color: #3E180C; }
+
+		/* ---------- Reveal ---------- */
+		.reveal { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
+		.reveal.revealed { opacity: 1; transform: translateY(0); }
+
+		@keyframes floatSlow { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-14px) rotate(8deg); } }
+		@keyframes floatReverse { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(12px) rotate(-6deg); } }
+		.deco-float-slow { animation: floatSlow 6s ease-in-out infinite; }
+		.deco-float-reverse { animation: floatReverse 7s ease-in-out infinite; }
+		.opacity-\[0\.03\] { opacity: .03; }
+		.break-all { word-break: break-all; }
+		.hover\:text-secondary:hover { color: #BED95F; }
+
+		/* ---------- Academy page ---------- */
+		.ac-wrap { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+		@media (min-width: 640px) { .ac-wrap { padding: 0 24px; } }
+		.ac-section { padding: 72px 0; position: relative; overflow: hidden; }
+		@media (min-width: 768px) { .ac-section { padding: 104px 0; } }
+		.ac-white { background: #fff; }
+		.ac-soft { background: linear-gradient(160deg, #F6FAE8 0%, #fff 70%); }
+
+		.ac-eyebrow {
+			display: inline-flex; align-items: center; gap: .5rem;
+			font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: .75rem;
+			letter-spacing: .14em; text-transform: uppercase; color: #5E9800;
+			background: rgba(119,189,0,.1); border: 1px solid rgba(119,189,0,.25);
+			padding: .45rem .9rem; border-radius: 999px; margin-bottom: 1rem;
+		}
+		.ac-eyebrow svg { width: 14px; height: 14px; }
+		.ac-h2 {
+			font-family: 'Montserrat', sans-serif; font-weight: 900; color: #3E180C;
+			font-size: clamp(1.9rem, 4.2vw, 3rem); line-height: 1.1; letter-spacing: -.02em; margin-bottom: 1rem;
+		}
+		.ac-h2 em { font-style: normal; color: #77BD00; }
+		.ac-lead { font-size: 1.075rem; line-height: 1.75; color: #6b4a3a; max-width: 640px; }
+		.ac-center { text-align: center; }
+		.ac-center .ac-lead { margin-left: auto; margin-right: auto; }
+		.ac-script { font-family: 'Dancing Script', cursive; font-weight: 700; color: #8F5A39; }
+
+		/* Buttons */
+		.ac-btn {
+			display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+			font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: .95rem;
+			padding: .95rem 1.75rem; border-radius: 999px; transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+			width: 100%; max-width: 340px;
+		}
+		@media (min-width: 640px) { .ac-btn { width: auto; } }
+		.ac-btn:hover { transform: translateY(-2px); }
+		.ac-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+		.ac-btn-primary { background: #77BD00; color: #fff; box-shadow: 0 12px 30px rgba(119,189,0,.35); }
+		.ac-btn-primary:hover { background: #5E9800; }
+		.ac-btn-ghost { background: rgba(255,255,255,.1); color: #fff; border: 1px solid rgba(255,255,255,.35); }
+		.ac-btn-ghost:hover { background: rgba(255,255,255,.2); }
+		.ac-btn-dark { background: #3E180C; color: #fff; box-shadow: 0 12px 30px rgba(62,24,12,.25); }
+		.ac-btn-dark:hover { background: #8F5A39; }
+		.ac-btn-light { background: #fff; color: #3E180C; box-shadow: 0 12px 30px rgba(0,0,0,.12); }
+		.ac-btn-light:hover { background: #f5f5f5; }
+		.ac-btn-wa { background: #25D366; color: #fff; box-shadow: 0 12px 30px rgba(37,211,102,.35); }
+		.ac-btn-wa:hover { background: #128C7E; }
+
+		/* HERO */
+		.ac-hero { position: relative; min-height: min(88vh, 820px); display: flex; align-items: center; margin-top: -4rem; overflow: hidden; background: #1d0b05; }
+		.ac-hero-bg { position: absolute; inset: 0; }
+		.ac-hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 70% center; }
+		.ac-hero-bg::after {
+			content: ''; position: absolute; inset: 0;
+			background: linear-gradient(180deg, rgba(29,11,5,.6) 0%, rgba(29,11,5,0) 22%), linear-gradient(100deg, rgba(29,11,5,.76) 0%, rgba(29,11,5,.5) 45%, rgba(29,11,5,.1) 100%);
+		}
+		@media (max-width: 767px) { .ac-hero-bg::after { background: linear-gradient(180deg, rgba(29,11,5,.62) 0%, rgba(29,11,5,.5) 40%, rgba(29,11,5,.55) 100%); } }
+		.ac-hero-inner { position: relative; z-index: 2; padding-top: 128px; padding-bottom: 96px; }
+		.ac-hero-badge {
+			display: inline-flex; align-items: center; gap: .6rem; padding: .5rem 1rem; border-radius: 999px;
+			background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22);
+			backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+			font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: #fff;
+			margin-bottom: 1.5rem;
+		}
+		.ac-hero-badge svg { width: 18px; height: 18px; color: #BED95F; }
+		.ac-hero h1 {
+			font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff;
+			font-size: clamp(2.3rem, 6vw, 4.4rem); line-height: 1.04; letter-spacing: -.025em; max-width: 780px; margin-bottom: 1.25rem;
+		}
+		.ac-hero h1, .ac-hero p.ac-hero-sub { text-shadow: 0 2px 18px rgba(0,0,0,.45); }
+		.ac-hero h1 span { color: #9ED62B; }
+		.ac-hero p.ac-hero-sub { color: rgba(255,255,255,.85); font-size: 1.15rem; line-height: 1.7; max-width: 600px; margin-bottom: 2rem; }
+		.ac-hero-ctas { display: flex; flex-direction: column; gap: .9rem; }
+		@media (min-width: 640px) { .ac-hero-ctas { flex-direction: row; } }
+		.ac-hero-pillars { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; margin-top: 3rem; max-width: 720px; }
+		@media (min-width: 768px) { .ac-hero-pillars { grid-template-columns: repeat(4, 1fr); } }
+		.ac-hero-pillar {
+			display: flex; align-items: center; gap: .65rem; padding: .8rem .9rem; border-radius: 14px;
+			background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); color: #fff;
+			font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: .82rem; line-height: 1.25;
+		}
+		.ac-hero-pillar svg { width: 22px; height: 22px; color: #9ED62B; flex-shrink: 0; }
+		.ac-hero-wave { position: absolute; bottom: -1px; left: 0; right: 0; z-index: 3; line-height: 0; }
+		.ac-hero-wave svg { width: 100%; height: 60px; display: block; }
+
+		/* INTRO */
+		.ac-intro { display: grid; gap: 3rem; align-items: center; }
+		@media (min-width: 960px) { .ac-intro { grid-template-columns: 1.05fr 1fr; gap: 4.5rem; } }
+		.ac-intro-media { position: relative; }
+		.ac-intro-media .ac-photo-main {
+			border-radius: 28px; overflow: hidden; box-shadow: 0 30px 60px rgba(62,24,12,.18); aspect-ratio: 5/4;
+		}
+		.ac-intro-media .ac-photo-main img { width: 100%; height: 100%; object-fit: cover; }
+		.ac-intro-media .ac-photo-float {
+			position: absolute; right: -10px; bottom: -34px; width: 44%; aspect-ratio: 1; border-radius: 22px; overflow: hidden;
+			border: 6px solid #fff; box-shadow: 0 20px 40px rgba(62,24,12,.2);
+		}
+		@media (min-width: 640px) { .ac-intro-media .ac-photo-float { right: -24px; } }
+		.ac-intro-media .ac-photo-float img { width: 100%; height: 100%; object-fit: cover; }
+		.ac-intro-media .ac-sticker {
+			position: absolute; left: 14px; top: 14px; background: #fff; border-radius: 16px; padding: .7rem 1rem;
+			display: flex; align-items: center; gap: .6rem; box-shadow: 0 12px 30px rgba(0,0,0,.12);
+			font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: .82rem; color: #3E180C;
+		}
+		.ac-sticker-dot { width: 34px; height: 34px; border-radius: 10px; background: #77BD00; color: #fff; display: grid; place-items: center; }
+		.ac-sticker-dot svg { width: 18px; height: 18px; }
+		.ac-checks { display: grid; gap: .8rem; margin-top: 1.75rem; }
+		.ac-check { display: flex; gap: .8rem; align-items: flex-start; font-size: 1.02rem; line-height: 1.5; color: #4a2a1c; }
+		.ac-check-i { width: 24px; height: 24px; border-radius: 999px; background: #77BD00; color: #fff; display: grid; place-items: center; flex-shrink: 0; margin-top: 1px; }
+		.ac-check-i svg { width: 14px; height: 14px; }
+		.ac-quote {
+			margin-top: 2rem; padding: 1.25rem 1.4rem; border-left: 4px solid #77BD00; background: #F6FAE8; border-radius: 0 16px 16px 0;
+			font-size: 1.02rem; line-height: 1.6; color: #4a2a1c;
+		}
+		.ac-quote strong { color: #3E180C; }
+
+		/* PILLARS */
+		.ac-pillars { display: grid; gap: 1.25rem; margin-top: 3rem; }
+		@media (min-width: 720px) { .ac-pillars { grid-template-columns: repeat(2, 1fr); } }
+		@media (min-width: 1100px) { .ac-pillars { grid-template-columns: repeat(4, 1fr); } }
+		.ac-pillar {
+			position: relative; background: #fff; border-radius: 24px; padding: 2rem 1.6rem 1.75rem;
+			border: 1px solid rgba(119,189,0,.18); box-shadow: 0 10px 30px rgba(62,24,12,.06);
+			transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; overflow: hidden;
+		}
+		.ac-pillar:hover { transform: translateY(-8px); box-shadow: 0 24px 48px rgba(119,189,0,.2); border-color: rgba(119,189,0,.45); }
+		.ac-pillar-num {
+			position: absolute; top: .4rem; right: 1rem; font-family: 'Montserrat', sans-serif; font-weight: 900;
+			font-size: 4.2rem; line-height: 1; color: rgba(119,189,0,.1);
+		}
+		.ac-pillar-icon {
+			width: 58px; height: 58px; border-radius: 18px; display: grid; place-items: center; margin-bottom: 1.25rem;
+			background: linear-gradient(135deg, #77BD00, #9ED62B); color: #fff; box-shadow: 0 10px 22px rgba(119,189,0,.35);
+		}
+		.ac-pillar-icon svg { width: 28px; height: 28px; }
+		.ac-pillar h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; line-height: 1.25; margin-bottom: .6rem; color: #3E180C; }
+		.ac-pillar p { font-size: .97rem; line-height: 1.6; color: #6b4a3a; margin-bottom: 1rem; }
+		.ac-pillar ul { display: grid; gap: .45rem; }
+		.ac-pillar li { display: flex; gap: .5rem; font-size: .9rem; line-height: 1.45; color: #4a2a1c; }
+		.ac-pillar li::before { content: ''; width: 7px; height: 7px; border-radius: 999px; background: #77BD00; margin-top: .45rem; flex-shrink: 0; }
+
+		/* PERFECT FOR YOU (dark band) */
+		.ac-dark { background: #3E180C; color: #fff; }
+		.ac-dark .ac-h2 { color: #fff; }
+		.ac-dark .ac-lead { color: rgba(255,255,255,.75); }
+		.ac-dark .ac-eyebrow { color: #BED95F; background: rgba(190,217,95,.1); border-color: rgba(190,217,95,.3); }
+		.ac-fit { display: grid; gap: 1rem; margin-top: 2.75rem; }
+		@media (min-width: 640px) { .ac-fit { grid-template-columns: repeat(2, 1fr); } }
+		@media (min-width: 1024px) { .ac-fit { grid-template-columns: repeat(4, 1fr); } }
+		.ac-fit-card {
+			padding: 1.6rem 1.4rem; border-radius: 20px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+			transition: background .3s ease, transform .3s ease;
+		}
+		.ac-fit-card:hover { background: rgba(119,189,0,.14); transform: translateY(-4px); }
+		.ac-fit-card .ac-fit-emoji { width: 46px; height: 46px; border-radius: 14px; background: rgba(158,214,43,.16); color: #9ED62B; display: grid; place-items: center; margin-bottom: 1rem; }
+		.ac-fit-card .ac-fit-emoji svg { width: 24px; height: 24px; }
+		.ac-fit-card h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.05rem; margin-bottom: .45rem; }
+		.ac-fit-card p { font-size: .93rem; line-height: 1.55; color: rgba(255,255,255,.72); }
+
+		/* CURRICULUM */
+		.ac-stages { display: grid; gap: 1.25rem; margin-top: 3rem; }
+		@media (min-width: 900px) { .ac-stages { grid-template-columns: repeat(2, 1fr); } }
+		.ac-stage { background: #fff; border-radius: 24px; padding: 1.75rem; border: 1px solid rgba(119,189,0,.16); box-shadow: 0 10px 30px rgba(62,24,12,.05); }
+		.ac-stage-head { display: flex; align-items: center; gap: .9rem; margin-bottom: 1.25rem; }
+		.ac-stage-tag {
+			font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase;
+			color: #fff; background: #3E180C; padding: .4rem .75rem; border-radius: 999px; white-space: nowrap;
+		}
+		.ac-stage-head h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; line-height: 1.2; }
+		.ac-mods { display: grid; gap: .5rem; }
+		.ac-mod {
+			display: flex; align-items: center; gap: .85rem; padding: .7rem .85rem; border-radius: 14px; background: #F6FAE8;
+			transition: background .2s ease, transform .2s ease;
+		}
+		.ac-mod:hover { background: #EAF2CE; transform: translateX(4px); }
+		.ac-mod-n {
+			width: 34px; height: 34px; border-radius: 10px; background: #77BD00; color: #fff; display: grid; place-items: center; flex-shrink: 0;
+			font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: .85rem;
+		}
+		.ac-mod span:last-child { font-weight: 700; font-size: .96rem; line-height: 1.35; color: #3E180C; }
+		.ac-stage-biz { background: linear-gradient(150deg, #3E180C 0%, #5a2814 100%); border: none; color: #fff; }
+		.ac-stage-biz .ac-stage-tag { background: #77BD00; }
+		.ac-stage-biz .ac-mod { background: rgba(255,255,255,.08); }
+		.ac-stage-biz .ac-mod:hover { background: rgba(255,255,255,.14); }
+		.ac-stage-biz .ac-mod span:last-child { color: #fff; }
+		.ac-stage-biz .ac-stage-note { color: rgba(255,255,255,.7); font-size: .92rem; line-height: 1.55; margin-top: 1rem; }
+
+		/* METHOD */
+		.ac-steps { display: grid; gap: 1.25rem; margin-top: 3rem; counter-reset: step; }
+		@media (min-width: 720px) { .ac-steps { grid-template-columns: repeat(2, 1fr); } }
+		@media (min-width: 1024px) { .ac-steps { grid-template-columns: repeat(4, 1fr); } }
+		.ac-step { position: relative; text-align: center; padding: 0 .5rem; }
+		.ac-step-circle {
+			width: 84px; height: 84px; margin: 0 auto 1.1rem; border-radius: 999px; background: #fff; display: grid; place-items: center;
+			border: 3px solid #77BD00; color: #77BD00; box-shadow: 0 12px 28px rgba(119,189,0,.22); position: relative; z-index: 1;
+		}
+		.ac-step-circle svg { width: 34px; height: 34px; }
+		.ac-step-circle b {
+			position: absolute; top: -6px; right: -6px; width: 30px; height: 30px; border-radius: 999px; background: #3E180C; color: #fff;
+			font-family: 'Montserrat', sans-serif; font-size: .8rem; display: grid; place-items: center;
+		}
+		@media (min-width: 1024px) {
+			.ac-step:not(:last-child)::after {
+				content: ''; position: absolute; top: 42px; left: calc(50% + 50px); right: calc(-50% + 50px);
+				border-top: 3px dashed rgba(119,189,0,.4);
+			}
+		}
+		.ac-step h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.1rem; margin-bottom: .45rem; }
+		.ac-step p { font-size: .95rem; line-height: 1.6; color: #6b4a3a; max-width: 260px; margin: 0 auto; }
+
+		/* INSTRUCTORS */
+		.ac-team { display: grid; gap: 3rem; align-items: center; }
+		@media (min-width: 960px) { .ac-team { grid-template-columns: 1.15fr 1fr; gap: 4rem; } }
+		.ac-team-photo { position: relative; border-radius: 28px; overflow: hidden; box-shadow: 0 30px 60px rgba(62,24,12,.2); }
+		.ac-team-photo img { width: 100%; height: auto; display: block; }
+		.ac-team-names {
+			position: absolute; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: repeat(3, 1fr);
+			background: linear-gradient(to top, rgba(29,11,5,.85), rgba(29,11,5,0)); padding: 2.5rem .5rem .9rem;
+		}
+		.ac-team-names span { text-align: center; color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: clamp(.85rem, 2.4vw, 1.1rem); }
+		.ac-team-list { display: grid; gap: .9rem; margin-top: 1.75rem; }
+		.ac-team-item { display: flex; gap: 1rem; align-items: center; padding: 1rem 1.1rem; border-radius: 18px; background: #fff; border: 1px solid rgba(119,189,0,.18); }
+		.ac-team-ava {
+			width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, #77BD00, #9ED62B); color: #fff; display: grid; place-items: center; flex-shrink: 0;
+			font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.2rem;
+		}
+		.ac-team-item h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.05rem; line-height: 1.2; }
+		.ac-team-item p { font-size: .9rem; color: #6b4a3a; line-height: 1.4; }
+
+		/* FAQ */
+		.ac-faq { max-width: 820px; margin: 2.75rem auto 0; display: grid; gap: .8rem; }
+		.ac-faq details { background: #fff; border-radius: 18px; border: 1px solid rgba(119,189,0,.2); overflow: hidden; transition: box-shadow .2s ease; }
+		.ac-faq details[open] { box-shadow: 0 14px 32px rgba(119,189,0,.14); }
+		.ac-faq summary {
+			list-style: none; cursor: pointer; padding: 1.15rem 1.35rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+			font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1rem; color: #3E180C;
+		}
+		.ac-faq summary::-webkit-details-marker { display: none; }
+		.ac-faq summary i {
+			width: 30px; height: 30px; border-radius: 999px; background: #F6FAE8; color: #77BD00; display: grid; place-items: center; flex-shrink: 0;
+			font-style: normal; font-size: 1.3rem; line-height: 1; transition: transform .25s ease, background .25s ease, color .25s ease;
+		}
+		.ac-faq details[open] summary i { transform: rotate(45deg); background: #77BD00; color: #fff; }
+		.ac-faq details p { padding: 0 1.35rem 1.25rem; font-size: .98rem; line-height: 1.65; color: #6b4a3a; }
+
+		/* CTA */
+		.ac-cta { background: linear-gradient(135deg, #BED95F 0%, #9ED62B 55%, #77BD00 100%); position: relative; overflow: hidden; }
+		.ac-cta-card {
+			position: relative; z-index: 1; max-width: 860px; margin: 0 auto; text-align: center;
+		}
+		.ac-cta h2 { font-family: 'Montserrat', sans-serif; font-weight: 900; color: #3E180C; font-size: clamp(2rem, 5vw, 3.3rem); line-height: 1.08; letter-spacing: -.02em; margin-bottom: .6rem; }
+		.ac-cta .ac-script { font-size: clamp(1.4rem, 3vw, 1.9rem); color: #3E180C; display: block; margin-bottom: 1.1rem; }
+		.ac-cta p { color: rgba(62,24,12,.82); font-size: 1.08rem; line-height: 1.7; max-width: 620px; margin: 0 auto 2rem; }
+		.ac-cta-btns { display: flex; flex-direction: column; align-items: center; gap: .9rem; }
+		@media (min-width: 640px) { .ac-cta-btns { flex-direction: row; justify-content: center; flex-wrap: wrap; } }
+		.ac-cta-paw { position: absolute; color: #fff; opacity: .16; }
+		.ac-cta-loc { margin-top: 1.75rem; display: inline-flex; align-items: center; gap: .45rem; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: #3E180C; }
+		.ac-cta-loc svg { width: 16px; height: 16px; }
+
+		.ac-paw-deco { position: absolute; color: #77BD00; opacity: .07; pointer-events: none; }
+			#mainNav .nav-link.active-page { color: #77BD00 !important; background: rgba(119, 189, 0, 0.08); border-radius: 8px; }
+		#mainNav.nav-scrolled .nav-link.active-page { color: #77BD00 !important; background: rgba(119, 189, 0, 0.08); }
+		/* Tablet: 8 nav links don't fit, use the hamburger menu up to 1024px */@media (min-width:768px) and (max-width:1023.98px){#mainNav .hidden.md\:flex{display:none!important}#mainNav #mobileMenuBtn{display:block!important}#mainNav #mobileMenu:not(.hidden){display:block!important}}
+</style>
+	<noscript>
+		<style>.reveal { opacity: 1; transform: none; }</style>
+	</noscript>
+</head>
+
+<body class="scroll-smooth">
+
+	<!-- Reusable paw icon -->
+	<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+		<symbol id="paw" viewBox="0 0 1024 1024">
+			<path d="M792.5 558.4c-46.8-27-44-118.7-14-170.7 26.9-46.6 86.5-62.6 133.1-35.7s62.6 86.5 35.7 133.1c-30.1 52.1-108 100.4-154.8 73.3zM623.4 390c-60.7-16.3-86.1-124.4-67.4-194 16.5-61.5 79.7-98.1 141.3-81.6 61.5 16.5 98.1 79.7 81.6 141.3-18.7 69.6-94.8 150.6-155.5 134.3zM233.5 558.7c-46.900 27.1-125.1-21.3-155.2-73.4-27-46.7-11-106.4 35.8-133.4 46.7-27 106.5-11 133.4 35.7 30 52.2 32.9 144-14 171.1zM374.6 390c-60.7 16.3-136.8-64.7-155.4-134.3-16.5-61.5 20-124.8 81.6-141.3S425.6 134.4 442.1 196c18.6 69.6-6.8 177.7-67.5 194zM513 436.3c111.7 0 279.9 170.1 279.9 307.6 0 91.3-28.3 143.3-79.1 161.4-17.5 6.2-32 7.4-54.3 6.7-4.4-.1-5.2-.2-6.5-.2-11.7 0-23.4-3.8-39.7-11.2-5.4-2.5-11.1-5.3-19.2-9.4 5.8 2.9-15.2-7.700-20.1-10.1-16.3-8.1-28.8-13.7-40.5-17.8-9-3.2-17.2-5.3-24.5-6.3h8c-7.3 1.1-15.4 3.2-24.5 6.4-11.8 4.2-24.2 9.7-40.5 17.9-4.9 2.4-25.8 13.1-20.1 10.2-8.1 4.1-13.8 6.9-19.2 9.4-16.2 7.5-28 11.3-39.7 11.3-1.3 0-2.1 0-6.5.2-22.3.7-36.8-.5-54.3-6.7-50.8-18.1-79.1-70.1-79.1-161.4 0-137.5 168.2-308 279.9-308z" fill="currentColor" />
+		</symbol>
+	</svg>
+
+	<!-- TOP BAR -->
+	<div class="bg-contrast text-white py-2 px-6 text-xs">
+		<div class="container mx-auto flex justify-between items-center">
+			<div class="flex items-center gap-5 font-lato">
+				<a href="tel:+17863200218" class="hover:text-primary transition flex items-center gap-1.5">
+					<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+					</svg>
+					(786) 320-0218
+				</a>
+				<span class="hidden sm:inline text-white/30">|</span>
+				<span class="hidden sm:inline items-center gap-1.5">Serving South Florida since 2010</span>
+			</div>
+			<div class="flex items-center gap-4 font-lato">
+				<a href="academy.html" class="hover:text-primary transition">Academy</a>
+				<a href="franchise.html" class="hover:text-primary transition">Franchising</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- NAVBAR -->
+	<nav id="mainNav" class="sticky top-0 z-50 transition-all duration-300">
+		<div class="container mx-auto px-6">
+			<div class="flex items-center justify-between h-16">
+				<div class="flex-shrink-0">
+					<a href="index.html" class="block">
+						<img src="assets/images/Yofren_Logo(1).png" alt="Yofren Master Pet Grooming Logo"
+							class="nav-logo h-11 w-auto object-contain hover:opacity-80 transition">
+					</a>
+				</div>
+
+				<div class="hidden md:flex items-center flex-1 justify-center">
+					<ul class="flex items-center gap-0.5 font-lato font-medium text-sm flex-wrap justify-center">
+						<li><a href="index.html" class="nav-link px-3 py-2 block">Home</a></li>
+						<li><a href="about.html" class="nav-link px-3 py-2 block">About Us</a></li>
+						<li><a href="services.html" class="nav-link px-3 py-2 block">Services</a></li>
+						<li><a href="locations.html" class="nav-link px-3 py-2 block">Locations</a></li>
+						<li><a href="academy.html" class="nav-link active-page px-3 py-2 block">Academy</a></li>
+						<li><a href="franchise.html" class="nav-link px-3 py-2 block">Franchising</a></li>
+						<li><a href="blog.html" class="nav-link px-3 py-2 block">Blog</a></li>
+						<li><a href="contact.html" class="nav-link px-3 py-2 block">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="hidden md:flex items-center gap-3 flex-shrink-0">
+					<a href="tel:+17863200218" aria-label="Call us"
+						class="nav-phone w-9 h-9 rounded-full border flex items-center justify-center hover:text-white transition-all duration-200">
+						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+						</svg>
+					</a>
+					<a href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank"
+						class="bg-primary hover:bg-green-600 text-white font-stem font-bold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105">
+						Book Now
+					</a>
+				</div>
+
+				<button id="mobileMenuBtn" class="nav-mobile-btn md:hidden p-1" aria-label="Open menu">
+					<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+			</div>
+
+			<div id="mobileMenu" class="hidden md:hidden pb-4">
+				<div class="bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-lg mt-2">
+					<ul class="space-y-0.5 font-lato font-medium text-sm mb-4">
+						<li><a href="index.html" class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Home</a></li>
+						<li><a href="about.html" class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">About Us</a></li>
+						<li><a href="services.html" class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Services</a></li>
+						<li><a href="locations.html" class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Locations</a></li>
+						<li><a href="academy.html" class="block px-3 py-2.5 rounded-lg bg-primary/5 text-primary font-semibold">Academy</a></li>
+						<li><a href="franchise.html" class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Franchising</a></li>
+						<li><a href="blog.html" class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Blog</a></li>
+						<li><a href="contact.html" class="block px-3 py-2.5 rounded-lg hover:bg-primary/5 hover:text-primary transition text-contrast">Contact</a></li>
+					</ul>
+					<a href="https://booking.moego.pet/ol/YofrenmasterpetgroomingFL/book" target="_blank"
+						class="block bg-primary hover:bg-green-600 text-white font-stem font-bold text-sm px-6 py-3 rounded-full shadow-md w-full transition text-center">
+						Book Now
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- ============ HERO ============ -->
+	<section class="ac-hero">
+		<div class="ac-hero-bg">
+			<img src="assets/images/academy/heroacademy.webp" alt="Yofren groomer with a freshly groomed doodle inside the grooming van">
+		</div>
+
+		<div class="ac-wrap ac-hero-inner">
+			<div class="ac-hero-badge">
+				<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm-6.82 9.4V16c0 1.7 3.05 4 6.82 4s6.82-2.3 6.82-4v-3.6L12 16.1 5.18 12.4z"/></svg>
+				Yofren Master Pet Grooming Academy
+			</div>
+
+			<h1>Turn your love for dogs into a <span>professional career.</span></h1>
+			<p class="ac-hero-sub">
+				A complete grooming program taught by groomers who work with real dogs every day. Learn the technique,
+				how to talk to clients, and how to build a business people trust.
+			</p>
+
+			<div class="ac-hero-ctas">
+				<a href="#enroll" class="ac-btn ac-btn-primary">
+					<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+					Request Information
+				</a>
+				<a href="#program" class="ac-btn ac-btn-ghost">See the Program</a>
+			</div>
+
+			<div class="ac-hero-pillars">
+				<div class="ac-hero-pillar">
+					<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.25v13m0-13C10.83 5.48 9.25 5 7.5 5S4.17 5.48 3 6.25v13C4.17 18.48 5.75 18 7.5 18s3.33.48 4.5 1.25m0-13C13.17 5.48 14.75 5 16.5 5s3.33.48 4.5 1.25v13C19.83 18.48 18.25 18 16.5 18s-3.33.48-4.5 1.25"/></svg>
+					Professional Theory
+				</div>
+				<div class="ac-hero-pillar">
+					<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path stroke-linecap="round" d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+					Supervised Practice
+				</div>
+				<div class="ac-hero-pillar">
+					<svg><use href="#paw"/></svg>
+					Animal Welfare
+				</div>
+				<div class="ac-hero-pillar">
+					<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20V14M10 20V10M16 20V6M22 20V3"/></svg>
+					Career Growth
+				</div>
+			</div>
+		</div>
+
+		<div class="ac-hero-wave">
+			<svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#ffffff" d="M0,32 C240,64 480,64 720,40 C960,16 1200,8 1440,28 L1440,60 L0,60 Z"/></svg>
+		</div>
+	</section>
+
+	<!-- ============ INTRO ============ -->
+	<section class="ac-section ac-white">
+		<svg class="ac-paw-deco deco-float-slow" style="width:120px;height:120px;top:40px;right:4%"><use href="#paw"/></svg>
+		<div class="ac-wrap ac-intro">
+			<div class="ac-intro-media reveal">
+				<div class="ac-photo-main">
+					<img src="assets/images/academy/practice.webp" alt="Academy instructor calmly handling a nervous dog" loading="lazy">
+				</div>
+				<div class="ac-photo-float">
+					<img src="assets/images/galeria3.webp" alt="Freshly groomed doodle on the grooming table" loading="lazy" style="object-position:48% center">
+				</div>
+				<div class="ac-sticker">
+					<span class="ac-sticker-dot"><svg><use href="#paw"/></svg></span>
+					Hands-on with real dogs
+				</div>
+			</div>
+
+			<div class="reveal">
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Why this academy</span>
+				<h2 class="ac-h2">Interested in grooming? <em>This is the course for you.</em></h2>
+				<p class="ac-lead">
+					Being a professional groomer is much more than bathing a dog or trimming its coat. A true professional
+					knows the tools, understands what each pet needs, works with patience and safety, recognizes risky
+					situations and gives clients an experience they want to repeat.
+				</p>
+
+				<div class="ac-checks">
+					<div class="ac-check"><span class="ac-check-i"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Complete technical training, from the basics to professional finishes.</div>
+					<div class="ac-check"><span class="ac-check-i"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Practice with real dogs, always under supervision.</div>
+					<div class="ac-check"><span class="ac-check-i"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Instructors who groom for a living, every single day.</div>
+					<div class="ac-check"><span class="ac-check-i"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Ready to get hired — or to start your own grooming business.</div>
+				</div>
+
+				<div class="ac-quote">
+					<strong>Our mission:</strong> to train responsible, well-prepared groomers who are fully committed to animal welfare.
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============ 4 PILLARS ============ -->
+	<section class="ac-section ac-soft" id="skills">
+		<div class="ac-wrap">
+			<div class="ac-center reveal">
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> What you'll master</span>
+				<h2 class="ac-h2">More than cutting hair. <em>A complete professional.</em></h2>
+				<p class="ac-lead">Great groomers win clients with their hands <em>and</em> with how they treat people. That's why our program covers four areas.</p>
+			</div>
+
+			<div class="ac-pillars">
+				<article class="ac-pillar reveal">
+					<span class="ac-pillar-num">01</span>
+					<div class="ac-pillar-icon">
+						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path stroke-linecap="round" d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+					</div>
+					<h3>Becoming a Professional Groomer</h3>
+					<p>The full technique, step by step, from the first brush to the final finish.</p>
+					<ul>
+						<li>Bathing, drying and coat prep</li>
+						<li>Clipper cuts and scissoring</li>
+						<li>Nails, ears and hygiene</li>
+						<li>Safe handling of every temperament</li>
+					</ul>
+				</article>
+
+				<article class="ac-pillar reveal">
+					<span class="ac-pillar-num">02</span>
+					<div class="ac-pillar-icon">
+						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.42-4.03 8-9 8a9.86 9.86 0 01-4.26-.95L3 20l1.4-3.72C3.51 15.04 3 13.57 3 12c0-4.42 4.03-8 9-8s9 3.58 9 8z"/></svg>
+					</div>
+					<h3>Talking With Clients</h3>
+					<p>Know what to ask, what to explain and how to set the right expectations.</p>
+					<ul>
+						<li>The first conversation with a pet owner</li>
+						<li>Recommending the right service</li>
+						<li>Explaining results with confidence</li>
+						<li>Handling difficult situations calmly</li>
+					</ul>
+				</article>
+
+				<article class="ac-pillar reveal">
+					<span class="ac-pillar-num">03</span>
+					<div class="ac-pillar-icon">
+						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5.88V19.24a1.76 1.76 0 01-3.42.59l-2.15-6.15M18 13a3 3 0 100-6M5.44 13.68A4 4 0 017 6h1.83c4.1 0 7.62-1.23 9.17-3v16c-1.55-1.77-5.07-3-9.17-3H7a4 4 0 01-1.56-.32z"/></svg>
+					</div>
+					<h3>Marketing &amp; Sales</h3>
+					<p>Get your work seen and keep your schedule full.</p>
+					<ul>
+						<li>Building your professional image</li>
+						<li>Social media and before &amp; after photos</li>
+						<li>Referrals and repeat bookings</li>
+						<li>The basics of running your own business</li>
+					</ul>
+				</article>
+
+				<article class="ac-pillar reveal">
+					<span class="ac-pillar-num">04</span>
+					<div class="ac-pillar-icon">
+						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.32 6.32a4.5 4.5 0 000 6.36L12 20.36l7.68-7.68a4.5 4.5 0 00-6.36-6.36L12 7.64l-1.32-1.32a4.5 4.5 0 00-6.36 0z"/></svg>
+					</div>
+					<h3>Customer Service &amp; Ethics</h3>
+					<p>The difference between a one-time client and a loyal one for years.</p>
+					<ul>
+						<li>A five-star experience, start to finish</li>
+						<li>Punctuality, follow-up and trust</li>
+						<li>Professional ethics and limits</li>
+						<li>Knowing when to refer to a vet</li>
+					</ul>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============ PERFECT FOR YOU ============ -->
+	<section class="ac-section ac-dark">
+		<svg class="ac-paw-deco deco-float-reverse" style="width:180px;height:180px;bottom:-30px;left:-30px;color:#9ED62B;opacity:.06"><use href="#paw"/></svg>
+		<div class="ac-wrap">
+			<div class="ac-center reveal">
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Who it's for</span>
+				<h2 class="ac-h2">Is this academy for you?</h2>
+				<p class="ac-lead">If any of these sounds like you, you're in the right place.</p>
+			</div>
+
+			<div class="ac-fit">
+				<div class="ac-fit-card reveal">
+					<div class="ac-fit-emoji"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/></svg></div>
+					<h3>Starting from zero</h3>
+					<p>No experience needed. We start with the basics and build up step by step.</p>
+				</div>
+				<div class="ac-fit-card reveal">
+					<div class="ac-fit-emoji"><svg><use href="#paw"/></svg></div>
+					<h3>Animal lovers</h3>
+					<p>You've always wanted to work with dogs and are ready to make it your profession.</p>
+				</div>
+				<div class="ac-fit-card reveal">
+					<div class="ac-fit-emoji"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+					<h3>Groomers leveling up</h3>
+					<p>You already groom and want to polish your technique, finishes and client skills.</p>
+				</div>
+				<div class="ac-fit-card reveal">
+					<div class="ac-fit-emoji"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
+					<h3>Future business owners</h3>
+					<p>You dream of your own grooming business and want to start it the right way.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============ CURRICULUM ============ -->
+	<section class="ac-section ac-white" id="program">
+		<svg class="ac-paw-deco deco-float-slow" style="width:140px;height:140px;top:60px;left:3%"><use href="#paw"/></svg>
+		<div class="ac-wrap">
+			<div class="ac-center reveal">
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> The program</span>
+				<h2 class="ac-h2">15 modules. <em>One complete program.</em></h2>
+				<p class="ac-lead">Organized in four stages, so every skill builds on the one before it.</p>
+			</div>
+
+			<div class="ac-stages">
+				<div class="ac-stage reveal">
+					<div class="ac-stage-head"><span class="ac-stage-tag">Stage 1</span><h3>Foundations</h3></div>
+					<div class="ac-mods">
+						<div class="ac-mod"><span class="ac-mod-n">1</span><span>Introduction to professional grooming</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">2</span><span>Professional tools &amp; equipment</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">3</span><span>Basic anatomy, skin &amp; coat types</span></div>
+					</div>
+				</div>
+
+				<div class="ac-stage reveal">
+					<div class="ac-stage-head"><span class="ac-stage-tag">Stage 2</span><h3>Hands-On Technique</h3></div>
+					<div class="ac-mods">
+						<div class="ac-mod"><span class="ac-mod-n">4</span><span>Bathing, drying &amp; professional prep</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">5</span><span>Hygiene: nails, ears &amp; sanitary areas</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">6</span><span>Clipper cuts &amp; popular styles</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">7</span><span>Scissoring &amp; professional finishes</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">8</span><span>Double coats, deshedding &amp; special breeds</span></div>
+					</div>
+				</div>
+
+				<div class="ac-stage reveal">
+					<div class="ac-stage-head"><span class="ac-stage-tag">Stage 3</span><h3>Safety &amp; Special Care</h3></div>
+					<div class="ac-mods">
+						<div class="ac-mod"><span class="ac-mod-n">9</span><span>Nervous, reactive &amp; aggressive dogs</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">10</span><span>Senior dogs &amp; special conditions</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">11</span><span>Canine first aid &amp; emergencies</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">12</span><span>Oral health &amp; dental care</span></div>
+					</div>
+				</div>
+
+				<div class="ac-stage ac-stage-biz reveal">
+					<div class="ac-stage-head"><span class="ac-stage-tag">Stage 4</span><h3>Clients &amp; Business</h3></div>
+					<div class="ac-mods">
+						<div class="ac-mod"><span class="ac-mod-n">13</span><span>Customer service &amp; professional ethics</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">14</span><span>Marketing, sales &amp; entrepreneurship</span></div>
+						<div class="ac-mod"><span class="ac-mod-n">15</span><span>Final evaluation &amp; integrated practice</span></div>
+					</div>
+					<p class="ac-stage-note">This is where technique becomes a career: how to win clients, keep them and grow.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============ METHOD ============ -->
+	<section class="ac-section ac-soft">
+		<div class="ac-wrap">
+			<div class="ac-center reveal">
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> How you'll learn</span>
+				<h2 class="ac-h2">Learn it. See it. <em>Do it.</em></h2>
+				<p class="ac-lead">Every module follows the same proven path, so you leave with real confidence, not just notes.</p>
+			</div>
+
+			<div class="ac-steps">
+				<div class="ac-step reveal">
+					<div class="ac-step-circle"><b>1</b>
+						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.25v13m0-13C10.83 5.48 9.25 5 7.5 5S4.17 5.48 3 6.25v13C4.17 18.48 5.75 18 7.5 18s3.33.48 4.5 1.25m0-13C13.17 5.48 14.75 5 16.5 5s3.33.48 4.5 1.25v13C19.83 18.48 18.25 18 16.5 18s-3.33.48-4.5 1.25"/></svg>
+					</div>
+					<h3>Key theory</h3>
+					<p>Clear objectives and the essential knowledge, with your student manual.</p>
+				</div>
+				<div class="ac-step reveal">
+					<div class="ac-step-circle"><b>2</b>
+						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.46 12C3.73 7.94 7.52 5 12 5s8.27 2.94 9.54 7c-1.27 4.06-5.06 7-9.54 7S3.73 16.06 2.46 12z"/></svg>
+					</div>
+					<h3>Live demonstration</h3>
+					<p>Watch your instructor do it, step by step, on a real dog.</p>
+				</div>
+				<div class="ac-step reveal">
+					<div class="ac-step-circle"><b>3</b>
+						<svg><use href="#paw"/></svg>
+					</div>
+					<h3>Supervised practice</h3>
+					<p>Your turn — with real dogs and an instructor right beside you.</p>
+				</div>
+				<div class="ac-step reveal">
+					<div class="ac-step-circle"><b>4</b>
+						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.84 3.7a3.42 3.42 0 001.95-.81 3.42 3.42 0 014.42 0c.55.47 1.23.75 1.95.81a3.42 3.42 0 013.14 3.14c.06.72.34 1.4.81 1.95a3.42 3.42 0 010 4.42 3.42 3.42 0 00-.81 1.95 3.42 3.42 0 01-3.14 3.14 3.42 3.42 0 00-1.95.81 3.42 3.42 0 01-4.42 0 3.42 3.42 0 00-1.95-.81 3.42 3.42 0 01-3.14-3.14 3.42 3.42 0 00-.81-1.95 3.42 3.42 0 010-4.42c.47-.55.75-1.23.81-1.95A3.42 3.42 0 017.84 3.7z"/></svg>
+					</div>
+					<h3>Evaluation</h3>
+					<p>Show what you've learned and get feedback to keep improving.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============ INSTRUCTORS ============ -->
+	<section class="ac-section ac-white">
+		<svg class="ac-paw-deco deco-float-reverse" style="width:120px;height:120px;bottom:50px;right:3%"><use href="#paw"/></svg>
+		<div class="ac-wrap ac-team">
+			<div class="ac-team-photo reveal">
+				<img src="assets/images/academy/instructors.webp" alt="Academy lead instructors Yofren, Víctor and Jenniffer" loading="lazy" width="992" height="466">
+				<div class="ac-team-names"><span>Yofren</span><span>Víctor</span><span>Jenniffer</span></div>
+			</div>
+
+			<div class="reveal">
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Your instructors</span>
+				<h2 class="ac-h2">Learn from people who <em>do it every day.</em></h2>
+				<p class="ac-lead">
+					Our instructors are part of the Yofren Master Pet Grooming team, serving South Florida families since 2010.
+					They teach what works in the real world — on the table and with the client.
+				</p>
+
+				<div class="ac-team-list">
+					<div class="ac-team-item">
+						<span class="ac-team-ava">Y</span>
+						<div><h3>Yofren</h3><p>Lead Instructor · Yofren Master Pet Grooming</p></div>
+					</div>
+					<div class="ac-team-item">
+						<span class="ac-team-ava">V</span>
+						<div><h3>Víctor</h3><p>Lead Instructor · Scissoring &amp; Finishing Specialist</p></div>
+					</div>
+					<div class="ac-team-item">
+						<span class="ac-team-ava">J</span>
+						<div><h3>Jenniffer</h3><p>Lead Instructor</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============ FAQ ============ -->
+	<section class="ac-section ac-soft">
+		<div class="ac-wrap">
+			<div class="ac-center reveal">
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Questions</span>
+				<h2 class="ac-h2">Good to know</h2>
+			</div>
+
+			<div class="ac-faq reveal">
+				<details>
+					<summary>Do I need grooming experience? <i>+</i></summary>
+					<p>No. The program starts with the fundamentals and builds step by step. If you already groom, it will help you refine your technique and your client skills.</p>
+				</details>
+				<details>
+					<summary>Will I work with real dogs? <i>+</i></summary>
+					<p>Yes. Every module includes hands-on practice with real dogs, always supervised by an instructor.</p>
+				</details>
+				<details>
+					<summary>Does the program cover the business side? <i>+</i></summary>
+					<p>Yes. Beyond technique, you'll learn how to talk with clients, deliver great customer service, and market your work so you can get hired or start your own business.</p>
+				</details>
+				<details>
+					<summary>Where are classes held? <i>+</i></summary>
+					<p>The academy is based in Miami, Florida.</p>
+				</details>
+				<details>
+					<summary>How do I find out about dates and enrollment? <i>+</i></summary>
+					<p>Message us on WhatsApp or give us a call. We'll share the next start dates, schedule and everything you need to enroll.</p>
+				</details>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============ CTA ============ -->
+	<section class="ac-section ac-cta" id="enroll">
+		<svg class="ac-cta-paw deco-float-slow" style="width:90px;height:90px;top:40px;left:6%"><use href="#paw"/></svg>
+		<svg class="ac-cta-paw deco-float-reverse" style="width:150px;height:150px;bottom:30px;right:5%"><use href="#paw"/></svg>
+		<div class="ac-wrap">
+			<div class="ac-cta-card reveal">
+				<h2>Your grooming career starts here.</h2>
+				<span class="ac-script">Make your passion your profession</span>
+				<p>Ask us about the next start date. We'll answer your questions and help you take the first step — no obligation.</p>
+				<div class="ac-cta-btns">
+					<a href="https://wa.me/17863200218?text=Hi!%20I'm%20interested%20in%20the%20Yofren%20Master%20Pet%20Grooming%20Academy" target="_blank" class="ac-btn ac-btn-dark">
+						<svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0012.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 005.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 00-3.48-8.41z"/></svg>
+						Message Us on WhatsApp
+					</a>
+					<a href="tel:+17863200218" class="ac-btn ac-btn-light">
+						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.21l-2.26 1.13a11.04 11.04 0 005.52 5.52l1.13-2.26a1 1 0 011.21-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"/></svg>
+						Call (786) 320-0218
+					</a>
+				</div>
+				<div class="ac-cta-loc">
+					<svg fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.66 16.66 13.41 20.9a2 2 0 01-2.83 0l-4.24-4.24a8 8 0 1111.32 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+					Miami, Florida
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="bg-contrast text-white relative overflow-hidden">
+		<div class="container mx-auto px-6 relative z-10">
+			<div class="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+				<div class="lg:col-span-1">
+					<div class="flex items-center gap-3 mb-4">
+						<img src="assets/images/Logo_PNG(1).png" alt="Yofren Master Pet Grooming Logo"
+							class="h-10 w-auto object-contain brightness-0 invert">
+					</div>
+					<p class="font-lato text-gray-400 text-sm leading-relaxed mb-5">
+						Premium mobile pet grooming, bringing love, care, and professional grooming to your doorstep
+						since 2010.
+					</p>
+					<div class="flex gap-2">
+						<a href="https://www.facebook.com/people/Yofren-Master-Pet-Grooming-FL/100090346147290/" target="_blank" aria-label="Facebook"
+							class="w-9 h-9 rounded-lg bg-white/10 hover:bg-primary flex items-center justify-center transition-all duration-200">
+							<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+							</svg>
+						</a>
+						<a href="https://www.instagram.com/yofrenmpg1" target="_blank" aria-label="Instagram"
+							class="w-9 h-9 rounded-lg bg-white/10 hover:bg-primary flex items-center justify-center transition-all duration-200">
+							<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div>
+					<h4 class="font-stem font-bold text-sm uppercase tracking-wider mb-4 text-white">Quick Links</h4>
+					<ul class="space-y-2.5 font-lato text-sm">
+						<li><a href="index.html" class="text-gray-400 hover:text-primary transition-all duration-200 inline-block">Home</a></li>
+						<li><a href="about.html" class="text-gray-400 hover:text-primary transition-all duration-200 inline-block">About Us</a></li>
+						<li><a href="services.html" class="text-gray-400 hover:text-primary transition-all duration-200 inline-block">Services</a></li>
+						<li><a href="locations.html" class="text-gray-400 hover:text-primary transition-all duration-200 inline-block">Locations</a></li>
+						<li><a href="blog.html" class="text-gray-400 hover:text-primary transition-all duration-200 inline-block">Blog</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h4 class="font-stem font-bold text-sm uppercase tracking-wider mb-4 text-white">Company</h4>
+					<ul class="space-y-2.5 font-lato text-sm">
+						<li><a href="academy.html" class="text-primary hover:text-secondary transition-all duration-200 inline-block font-semibold">Grooming Academy</a></li>
+						<li><a href="franchise.html" class="text-gray-400 hover:text-primary transition-all duration-200 inline-block">Franchising</a></li>
+						<li><a href="privacy-policy.html" class="text-gray-400 hover:text-primary transition-all duration-200 inline-block">Privacy Policy</a></li>
+						<li><a href="terms-conditions.html" class="text-gray-400 hover:text-primary transition-all duration-200 inline-block">Terms &amp; Conditions</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h4 class="font-stem font-bold text-sm uppercase tracking-wider mb-4 text-white">Contact Us</h4>
+					<ul class="space-y-3 font-lato text-sm">
+						<li>
+							<a href="tel:+17863200218" class="flex items-center gap-2.5 text-gray-400 hover:text-primary transition-all duration-200 group">
+								<span class="w-8 h-8 rounded-lg bg-white/10 group-hover:bg-primary/20 flex items-center justify-center flex-shrink-0 transition">
+									<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+									</svg>
+								</span>
+								(786) 320-0218
+							</a>
+						</li>
+						<li>
+							<div class="flex items-start gap-2.5 text-gray-400">
+								<span class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+									<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+									</svg>
+								</span>
+								South Florida, USA
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="border-t border-white/10 py-5">
+				<div class="flex flex-col md:flex-row justify-between items-center gap-3">
+					<p class="font-lato text-gray-500 text-xs text-center md:text-left">&copy; 2026 Yofren Master Pet Grooming. All rights reserved.</p>
+					<p class="font-lato text-gray-600 text-xs">Designed by <span class="text-primary">&hearts;</span> Creative Agency Brands</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- WHATSAPP FLOAT -->
+	<a href="https://wa.me/17863200218?text=Hi!%20I'm%20interested%20in%20the%20Yofren%20Master%20Pet%20Grooming%20Academy"
+		class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_10px_40px_rgba(37,211,102,0.5)] transition-transform duration-300 hover:scale-110 hover:-translate-y-2"
+		target="_blank" aria-label="Contact us on WhatsApp">
+		<svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.870 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0012.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 005.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 00-3.48-8.41z"/></svg>
+	</a>
+
+	<script src="assets/js/script.js"></script>
+	<script>
+		window.addEventListener('load', function () {
+			setTimeout(function () {
+				document.querySelectorAll('.reveal:not(.revealed)').forEach(function (el) {
+					var r = el.getBoundingClientRect();
+					if (r.top < window.innerHeight) el.classList.add('revealed');
+				});
+			}, 1500);
+		});
+	</script>
+</body>
+
+</html>
