@@ -120,6 +120,8 @@
 		/* HERO */
 		.ac-hero { position: relative; min-height: min(88vh, 820px); display: flex; align-items: center; margin-top: -4rem; overflow: hidden; background: #1d0b05; }
 		.ac-hero-bg { position: absolute; inset: 0; }
+		.ac-hero-bg picture { display: block; width: 100%; height: 100%; }
+		@media (max-width: 767px) { .ac-hero-bg img { object-position: center top; } }
 		.ac-hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 70% center; }
 		.ac-hero-bg::after {
 			content: ''; position: absolute; inset: 0;
@@ -438,7 +440,11 @@
 	<!-- ============ HERO ============ -->
 	<section class="ac-hero">
 		<div class="ac-hero-bg">
-			<img src="assets/images/academy/heroacademy.webp" alt="Yofren groomer with a freshly groomed doodle inside the grooming van">
+			<picture>
+				<source media="(max-width: 767px)" srcset="assets/images/academy/heroacademytlf.webp" type="image/webp">
+				<source media="(min-width: 768px)" srcset="assets/images/academy/heroacademy.webp" type="image/webp">
+				<img src="assets/images/academy/heroacademy.webp" alt="Yofren groomer holding a freshly groomed white dog inside the grooming van" fetchpriority="high">
+			</picture>
 		</div>
 
 		<div class="ac-wrap ac-hero-inner">
