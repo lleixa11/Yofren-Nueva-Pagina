@@ -12,7 +12,7 @@
 
 	<!-- SEO -->
 	<meta name="description"
-		content="Yofren Master Pet Grooming Academy in Miami, FL. A professional dog grooming program: hands-on technique with real dogs, client communication, marketing and customer service.">
+		content="Yofren Master Pet Grooming Academy in Miami, FL. Grooming training programs and specialized workshops in development, led by experienced grooming professionals. Contact us to learn more.">
 	<link rel="canonical" href="https://yofrenpetgrooming.com/academy.html">
 
 	<!-- Open Graph -->
@@ -20,14 +20,14 @@
 	<meta property="og:url" content="https://yofrenpetgrooming.com/academy.html">
 	<meta property="og:title" content="Grooming Academy | Yofren Master Pet Grooming">
 	<meta property="og:description"
-		content="Become a professional dog groomer. Hands-on training, client communication, marketing and customer service — taught by working groomers in Miami, FL.">
+		content="Learn from experienced grooming professionals. Grooming training programs and specialized workshops in development in Miami, FL. Contact us to learn more.">
 	<meta property="og:image" content="https://yofrenpetgrooming.com/assets/images/academy/instructors.webp">
 
 	<!-- Twitter Cards -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Grooming Academy | Yofren Master Pet Grooming">
 	<meta name="twitter:description"
-		content="Become a professional dog groomer. Hands-on training, client communication, marketing and customer service — taught by working groomers in Miami, FL.">
+		content="Learn from experienced grooming professionals. Grooming training programs and specialized workshops in development in Miami, FL. Contact us to learn more.">
 	<meta name="twitter:image" content="https://yofrenpetgrooming.com/assets/images/academy/instructors.webp">
 
 	<link rel="stylesheet" href="assets/css/tailwind.css">
@@ -258,6 +258,17 @@
 		.ac-stage-biz .ac-mod:hover { background: rgba(255,255,255,.14); }
 		.ac-stage-biz .ac-mod span:last-child { color: #fff; }
 		.ac-stage-biz .ac-stage-note { color: rgba(255,255,255,.7); font-size: .92rem; line-height: 1.55; margin-top: 1rem; }
+		.ac-mod-n svg { width: 16px; height: 16px; }
+		.ac-stage-desc { font-size: .97rem; line-height: 1.6; color: #6b4a3a; margin-bottom: 1.1rem; }
+		.ac-stage-biz .ac-stage-desc { color: rgba(255,255,255,.75); }
+		.ac-stage-link { display: inline-flex; align-items: center; gap: .4rem; margin-top: 1.2rem; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: .92rem; color: #77BD00; }
+		.ac-stage-link:hover { text-decoration: underline; }
+		.ac-stage-biz .ac-stage-link { color: #BED95F; }
+		.ac-dev-note {
+			max-width: 760px; margin: 2.5rem auto 0; padding: 1.1rem 1.4rem; border-radius: 18px; background: #F6FAE8;
+			border: 1px dashed rgba(119,189,0,.5); color: #4a2a1c; font-size: .95rem; line-height: 1.6; text-align: center;
+		}
+		.ac-dev-note strong { color: #3E180C; }
 
 		/* METHOD */
 		.ac-steps { display: grid; gap: 1.25rem; margin-top: 3rem; counter-reset: step; }
@@ -330,6 +341,51 @@
 		.ac-cta-paw { position: absolute; color: #fff; opacity: .16; }
 		.ac-cta-loc { margin-top: 1.75rem; display: inline-flex; align-items: center; gap: .45rem; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: #3E180C; }
 		.ac-cta-loc svg { width: 16px; height: 16px; }
+
+		/* TRAINING AREAS */
+		.ac-areas { display: grid; gap: .8rem; margin-top: 2.5rem; grid-template-columns: 1fr; }
+		@media (min-width: 560px) { .ac-areas { grid-template-columns: repeat(2, 1fr); } }
+		@media (min-width: 960px) { .ac-areas { grid-template-columns: repeat(3, 1fr); } }
+		.ac-area {
+			display: flex; align-items: center; gap: .9rem; padding: 1.1rem 1.2rem; border-radius: 18px; background: #fff;
+			border: 1px solid rgba(119,189,0,.2); box-shadow: 0 8px 22px rgba(62,24,12,.05); transition: transform .25s ease, box-shadow .25s ease;
+		}
+		.ac-area:hover { transform: translateY(-4px); box-shadow: 0 16px 32px rgba(119,189,0,.18); }
+		.ac-area-i { width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #77BD00, #9ED62B); color: #fff; display: grid; place-items: center; flex-shrink: 0; }
+		.ac-area-i svg { width: 22px; height: 22px; }
+		.ac-area span:last-child { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1rem; color: #3E180C; }
+		.ac-value-head { margin-top: 4.5rem; }
+		.ac-value { display: grid; gap: 1.25rem; margin-top: 2.5rem; }
+		@media (min-width: 900px) { .ac-value { grid-template-columns: repeat(2, 1fr); } }
+		.ac-value-card { display: grid; grid-template-columns: 1fr; border-radius: 26px; overflow: hidden; background: #fff; border: 1px solid rgba(119,189,0,.18); box-shadow: 0 14px 34px rgba(62,24,12,.07); }
+		@media (min-width: 560px) { .ac-value-card { grid-template-columns: 38% 1fr; } }
+		.ac-value-card.is-dark { background: linear-gradient(150deg, #3E180C 0%, #5a2814 100%); border: none; color: #fff; }
+		.ac-value-photo { min-height: 220px; }
+		.ac-value-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+		.ac-value-body { padding: 1.6rem 1.5rem; }
+		.ac-value-body .ac-stage-tag { display: inline-block; margin-bottom: .8rem; background: #77BD00; }
+		.ac-value-body h3 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.25rem; line-height: 1.25; margin-bottom: .6rem; color: #3E180C; }
+		.ac-value-card.is-dark h3 { color: #fff; }
+		.ac-value-body p { font-size: .98rem; line-height: 1.65; color: #6b4a3a; }
+		.ac-value-card.is-dark p { color: rgba(255,255,255,.78); }
+
+		/* INSTRUCTOR CARDS */
+		.ac-instr { display: grid; gap: 1.25rem; margin-top: 2.75rem; }
+		@media (min-width: 720px) { .ac-instr { grid-template-columns: repeat(3, 1fr); } }
+		.ac-instr-card { background: #fff; border-radius: 24px; overflow: hidden; border: 1px solid rgba(119,189,0,.18); box-shadow: 0 14px 34px rgba(62,24,12,.07); transition: transform .3s ease, box-shadow .3s ease; }
+		.ac-instr-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px rgba(119,189,0,.2); }
+		.ac-instr-photo { aspect-ratio: 4/5; overflow: hidden; background: #F6FAE8; }
+		.ac-instr-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+		.ac-instr-body { padding: 1.3rem 1.4rem 1.5rem; }
+		.ac-instr-body h3 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.3rem; color: #3E180C; margin-bottom: .3rem; }
+		.ac-instr-body p { font-size: .93rem; line-height: 1.45; color: #77BD00; font-family: 'Montserrat', sans-serif; font-weight: 800; }
+
+		/* WAYS TO LEARN */
+		.ac-price { margin-top: 1.1rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem; }
+		.ac-price small { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 800; font-family: 'Montserrat', sans-serif; color: rgba(255,255,255,.65); }
+		.ac-price b { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.9rem; color: #BED95F; }
+		.ac-price-alt { margin-top: 1.1rem; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: .92rem; color: #3E180C; }
+		.ac-ways-cta { text-align: center; margin-top: 2.5rem; }
 
 		.ac-paw-deco { position: absolute; color: #77BD00; opacity: .07; pointer-events: none; }
 			#mainNav .nav-link.active-page { color: #77BD00 !important; background: rgba(119, 189, 0, 0.08); border-radius: 8px; }
@@ -453,10 +509,9 @@
 				Yofren Master Pet Grooming Academy
 			</div>
 
-			<h1>Turn your love for dogs into a <span>professional career.</span></h1>
+			<h1>Learn Grooming From <span>Experienced Professionals.</span></h1>
 			<p class="ac-hero-sub">
-				A complete grooming program taught by groomers who work with real dogs every day. Learn the technique,
-				how to talk to clients, and how to build a business people trust.
+				Explore grooming techniques, animal care, safe handling, and professional development with Yofren Master Pet Grooming.
 			</p>
 
 			<div class="ac-hero-ctas">
@@ -464,25 +519,24 @@
 					<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
 					Request Information
 				</a>
-				<a href="#program" class="ac-btn ac-btn-ghost">See the Program</a>
 			</div>
 
 			<div class="ac-hero-pillars">
 				<div class="ac-hero-pillar">
-					<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.25v13m0-13C10.83 5.48 9.25 5 7.5 5S4.17 5.48 3 6.25v13C4.17 18.48 5.75 18 7.5 18s3.33.48 4.5 1.25m0-13C13.17 5.48 14.75 5 16.5 5s3.33.48 4.5 1.25v13C19.83 18.48 18.25 18 16.5 18s-3.33.48-4.5 1.25"/></svg>
-					Professional Theory
+					<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path stroke-linecap="round" d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+					Grooming Techniques
 				</div>
 				<div class="ac-hero-pillar">
-					<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path stroke-linecap="round" d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
-					Supervised Practice
+					<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.25v13m0-13C10.83 5.48 9.25 5 7.5 5S4.17 5.48 3 6.25v13C4.17 18.48 5.75 18 7.5 18s3.33.48 4.5 1.25m0-13C13.17 5.48 14.75 5 16.5 5s3.33.48 4.5 1.25v13C19.83 18.48 18.25 18 16.5 18s-3.33.48-4.5 1.25"/></svg>
+					Specialized Workshops
 				</div>
 				<div class="ac-hero-pillar">
 					<svg><use href="#paw"/></svg>
-					Animal Welfare
+					Safe Handling &amp; Animal Care
 				</div>
 				<div class="ac-hero-pillar">
-					<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20V14M10 20V10M16 20V6M22 20V3"/></svg>
-					Career Growth
+					<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.42-4.03 8-9 8a9.86 9.86 0 01-4.26-.95L3 20l1.4-3.72C3.51 15.04 3 13.57 3 12c0-4.42 4.03-8 9-8s9 3.58 9 8z"/></svg>
+					Client &amp; Business Skills
 				</div>
 			</div>
 		</div>
@@ -492,335 +546,173 @@
 		</div>
 	</section>
 
-	<!-- ============ INTRO ============ -->
-	<section class="ac-section ac-white">
+	<!-- ============ 2 · TRAINING AREAS ============ -->
+	<section class="ac-section ac-white" id="areas">
 		<svg class="ac-paw-deco deco-float-slow" style="width:120px;height:120px;top:40px;right:4%"><use href="#paw"/></svg>
-		<div class="ac-wrap ac-intro">
-			<div class="ac-intro-media reveal">
-				<div class="ac-photo-main">
-					<img src="assets/images/academy/practice.webp" alt="Academy instructor calmly handling a nervous dog" loading="lazy">
-				</div>
-				<div class="ac-photo-float">
-					<img src="assets/images/galeria3.webp" alt="Freshly groomed doodle on the grooming table" loading="lazy" style="object-position:48% center">
-				</div>
-				<div class="ac-sticker">
-					<span class="ac-sticker-dot"><svg><use href="#paw"/></svg></span>
-					Hands-on with real dogs
-				</div>
-			</div>
-
-			<div class="reveal">
-				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Why this academy</span>
-				<h2 class="ac-h2">Interested in grooming? <em>This is the course for you.</em></h2>
-				<p class="ac-lead">
-					Being a professional groomer is much more than bathing a dog or trimming its coat. A true professional
-					knows the tools, understands what each pet needs, works with patience and safety, recognizes risky
-					situations and gives clients an experience they want to repeat.
-				</p>
-
-				<div class="ac-checks">
-					<div class="ac-check"><span class="ac-check-i"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Complete technical training, from the basics to professional finishes.</div>
-					<div class="ac-check"><span class="ac-check-i"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Practice with real dogs, always under supervision.</div>
-					<div class="ac-check"><span class="ac-check-i"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Instructors who groom for a living, every single day.</div>
-					<div class="ac-check"><span class="ac-check-i"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>Ready to get hired — or to start your own grooming business.</div>
-				</div>
-
-				<div class="ac-quote">
-					<strong>Our mission:</strong> to train responsible, well-prepared groomers who are fully committed to animal welfare.
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ============ 4 PILLARS ============ -->
-	<section class="ac-section ac-soft" id="skills">
 		<div class="ac-wrap">
 			<div class="ac-center reveal">
-				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> What you'll master</span>
-				<h2 class="ac-h2">More than cutting hair. <em>A complete professional.</em></h2>
-				<p class="ac-lead">Great groomers win clients with their hands <em>and</em> with how they treat people. That's why our program covers four areas.</p>
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> What we offer</span>
+				<h2 class="ac-h2">Explore Our <em>Training Areas.</em></h2>
+				<p class="ac-lead">Discover grooming fundamentals, scissoring, coat care, safe handling, senior pet care, and business development.</p>
 			</div>
 
-			<div class="ac-pillars">
-				<article class="ac-pillar reveal">
-					<span class="ac-pillar-num">01</span>
-					<div class="ac-pillar-icon">
-						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path stroke-linecap="round" d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
-					</div>
-					<h3>Becoming a Professional Groomer</h3>
-					<p>The full technique, step by step, from the first brush to the final finish.</p>
-					<ul>
-						<li>Bathing, drying and coat prep</li>
-						<li>Clipper cuts and scissoring</li>
-						<li>Nails, ears and hygiene</li>
-						<li>Safe handling of every temperament</li>
-					</ul>
-				</article>
+			<div class="ac-areas">
+				<div class="ac-area reveal">
+					<span class="ac-area-i"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.25v13m0-13C10.83 5.48 9.25 5 7.5 5S4.17 5.48 3 6.25v13C4.17 18.48 5.75 18 7.5 18s3.33.48 4.5 1.25m0-13C13.17 5.48 14.75 5 16.5 5s3.33.48 4.5 1.25v13C19.83 18.48 18.25 18 16.5 18s-3.33.48-4.5 1.25"/></svg></span>
+					<span>Grooming Fundamentals</span>
+				</div>
+				<div class="ac-area reveal">
+					<span class="ac-area-i"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path stroke-linecap="round" d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg></span>
+					<span>Scissoring &amp; Finishing</span>
+				</div>
+				<div class="ac-area reveal">
+					<span class="ac-area-i"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16 2.29 6.86L22 12l-6.71 2.14L13 21l-2.29-6.86L4 12l6.71-2.14L13 3z"/></svg></span>
+					<span>Coat Care</span>
+				</div>
+				<div class="ac-area reveal">
+					<span class="ac-area-i"><svg><use href="#paw"/></svg></span>
+					<span>Safe Handling &amp; Animal Care</span>
+				</div>
+				<div class="ac-area reveal">
+					<span class="ac-area-i"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.32 6.32a4.5 4.5 0 000 6.36L12 20.36l7.68-7.68a4.5 4.5 0 00-6.36-6.36L12 7.64l-1.32-1.32a4.5 4.5 0 00-6.36 0z"/></svg></span>
+					<span>Senior Pet Care</span>
+				</div>
+				<div class="ac-area reveal">
+					<span class="ac-area-i"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20V14M10 20V10M16 20V6M22 20V3"/></svg></span>
+					<span>Business Development</span>
+				</div>
+			</div>
 
-				<article class="ac-pillar reveal">
-					<span class="ac-pillar-num">02</span>
-					<div class="ac-pillar-icon">
-						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.42-4.03 8-9 8a9.86 9.86 0 01-4.26-.95L3 20l1.4-3.72C3.51 15.04 3 13.57 3 12c0-4.42 4.03-8 9-8s9 3.58 9 8z"/></svg>
-					</div>
-					<h3>Talking With Clients</h3>
-					<p>Know what to ask, what to explain and how to set the right expectations.</p>
-					<ul>
-						<li>The first conversation with a pet owner</li>
-						<li>Recommending the right service</li>
-						<li>Explaining results with confidence</li>
-						<li>Handling difficult situations calmly</li>
-					</ul>
-				</article>
+			<div class="ac-center ac-value-head reveal">
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Our specialties</span>
+				<h2 class="ac-h2">Learn What Most Grooming <em>Courses Don't Teach.</em></h2>
+			</div>
 
-				<article class="ac-pillar reveal">
-					<span class="ac-pillar-num">03</span>
-					<div class="ac-pillar-icon">
-						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5.88V19.24a1.76 1.76 0 01-3.42.59l-2.15-6.15M18 13a3 3 0 100-6M5.44 13.68A4 4 0 017 6h1.83c4.1 0 7.62-1.23 9.17-3v16c-1.55-1.77-5.07-3-9.17-3H7a4 4 0 01-1.56-.32z"/></svg>
+			<div class="ac-value">
+				<article class="ac-value-card reveal">
+					<div class="ac-value-photo">
+						<img src="assets/images/academy/practice.webp" alt="Yofren calmly handling a nervous dog" loading="lazy">
 					</div>
-					<h3>Marketing &amp; Sales</h3>
-					<p>Get your work seen and keep your schedule full.</p>
-					<ul>
-						<li>Building your professional image</li>
-						<li>Social media and before &amp; after photos</li>
-						<li>Referrals and repeat bookings</li>
-						<li>The basics of running your own business</li>
-					</ul>
+					<div class="ac-value-body">
+						<span class="ac-stage-tag">With Yofren</span>
+						<h3>Specialized Handling</h3>
+						<p>Learn to recognize stress, adapt grooming for nervous or reactive dogs, and care for senior pets and dogs with special needs, with safety and animal welfare as the priority.</p>
+					</div>
 				</article>
-
-				<article class="ac-pillar reveal">
-					<span class="ac-pillar-num">04</span>
-					<div class="ac-pillar-icon">
-						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.32 6.32a4.5 4.5 0 000 6.36L12 20.36l7.68-7.68a4.5 4.5 0 00-6.36-6.36L12 7.64l-1.32-1.32a4.5 4.5 0 00-6.36 0z"/></svg>
+				<article class="ac-value-card is-dark reveal">
+					<div class="ac-value-photo">
+						<img src="assets/images/galeria3.webp" alt="Doodle with a professional scissored finish" loading="lazy" style="object-position:48% center">
 					</div>
-					<h3>Customer Service &amp; Ethics</h3>
-					<p>The difference between a one-time client and a loyal one for years.</p>
-					<ul>
-						<li>A five-star experience, start to finish</li>
-						<li>Punctuality, follow-up and trust</li>
-						<li>Professional ethics and limits</li>
-						<li>Knowing when to refer to a vet</li>
-					</ul>
+					<div class="ac-value-body">
+						<span class="ac-stage-tag">With Víctor</span>
+						<h3>Professional Scissoring</h3>
+						<p>Develop precision, symmetry, breed-specific styling and professional finishing techniques through demonstrations and supervised practice.</p>
+					</div>
 				</article>
 			</div>
 		</div>
 	</section>
 
-	<!-- ============ PERFECT FOR YOU ============ -->
-	<section class="ac-section ac-dark">
-		<svg class="ac-paw-deco deco-float-reverse" style="width:180px;height:180px;bottom:-30px;left:-30px;color:#9ED62B;opacity:.06"><use href="#paw"/></svg>
+	<!-- ============ 3 · INSTRUCTORS ============ -->
+	<section class="ac-section ac-soft" id="team">
 		<div class="ac-wrap">
 			<div class="ac-center reveal">
-				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Who it's for</span>
-				<h2 class="ac-h2">Is this academy for you?</h2>
-				<p class="ac-lead">If any of these sounds like you, you're in the right place.</p>
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Our team</span>
+				<h2 class="ac-h2">Learn From <em>Our Team.</em></h2>
+				<p class="ac-lead">Meet Yofren, Víctor, and Jenniffer, bringing together practical grooming experience, specialized finishing techniques, and business knowledge.</p>
 			</div>
 
-			<div class="ac-fit">
-				<div class="ac-fit-card reveal">
-					<div class="ac-fit-emoji"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/></svg></div>
-					<h3>Starting from zero</h3>
-					<p>No experience needed. We start with the basics and build up step by step.</p>
-				</div>
-				<div class="ac-fit-card reveal">
-					<div class="ac-fit-emoji"><svg><use href="#paw"/></svg></div>
-					<h3>Animal lovers</h3>
-					<p>You've always wanted to work with dogs and are ready to make it your profession.</p>
-				</div>
-				<div class="ac-fit-card reveal">
-					<div class="ac-fit-emoji"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
-					<h3>Groomers leveling up</h3>
-					<p>You already groom and want to polish your technique, finishes and client skills.</p>
-				</div>
-				<div class="ac-fit-card reveal">
-					<div class="ac-fit-emoji"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
-					<h3>Future business owners</h3>
-					<p>You dream of your own grooming business and want to start it the right way.</p>
-				</div>
+			<div class="ac-instr">
+				<article class="ac-instr-card reveal">
+					<div class="ac-instr-photo"><img src="assets/images/academy/instructors.webp" alt="Yofren, Master Groomer" loading="lazy" style="object-position:0% center"></div>
+					<div class="ac-instr-body">
+						<h3>Yofren</h3>
+						<p>Master Groomer &amp; Specialized Handling Instructor</p>
+					</div>
+				</article>
+				<article class="ac-instr-card reveal">
+					<div class="ac-instr-photo"><img src="assets/images/academy/instructors.webp" alt="Víctor, scissoring and finishing instructor" loading="lazy" style="object-position:50% center"></div>
+					<div class="ac-instr-body">
+						<h3>Víctor</h3>
+						<p>Professional Scissoring &amp; Finishing Instructor</p>
+					</div>
+				</article>
+				<article class="ac-instr-card reveal">
+					<div class="ac-instr-photo"><img src="assets/images/academy/instructors.webp" alt="Jenniffer, business, marketing and client relations instructor" loading="lazy" style="object-position:100% center"></div>
+					<div class="ac-instr-body">
+						<h3>Jenniffer</h3>
+						<p>Business, Marketing &amp; Client Relations Instructor</p>
+					</div>
+				</article>
 			</div>
 		</div>
 	</section>
 
-	<!-- ============ CURRICULUM ============ -->
+	<!-- ============ 4 · WAYS TO LEARN ============ -->
 	<section class="ac-section ac-white" id="program">
 		<svg class="ac-paw-deco deco-float-slow" style="width:140px;height:140px;top:60px;left:3%"><use href="#paw"/></svg>
 		<div class="ac-wrap">
 			<div class="ac-center reveal">
-				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> The program</span>
-				<h2 class="ac-h2">15 modules. <em>One complete program.</em></h2>
-				<p class="ac-lead">Organized in four stages, so every skill builds on the one before it.</p>
+				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Programs</span>
+				<h2 class="ac-h2">Different Ways <em>to Learn.</em></h2>
+				<p class="ac-lead">Explore introductory grooming education, specialized workshops, and professional development opportunities.</p>
 			</div>
 
 			<div class="ac-stages">
-				<div class="ac-stage reveal">
-					<div class="ac-stage-head"><span class="ac-stage-tag">Stage 1</span><h3>Foundations</h3></div>
-					<div class="ac-mods">
-						<div class="ac-mod"><span class="ac-mod-n">1</span><span>Introduction to professional grooming</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">2</span><span>Professional tools &amp; equipment</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">3</span><span>Basic anatomy, skin &amp; coat types</span></div>
-					</div>
-				</div>
-
-				<div class="ac-stage reveal">
-					<div class="ac-stage-head"><span class="ac-stage-tag">Stage 2</span><h3>Hands-On Technique</h3></div>
-					<div class="ac-mods">
-						<div class="ac-mod"><span class="ac-mod-n">4</span><span>Bathing, drying &amp; professional prep</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">5</span><span>Hygiene: nails, ears &amp; sanitary areas</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">6</span><span>Clipper cuts &amp; popular styles</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">7</span><span>Scissoring &amp; professional finishes</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">8</span><span>Double coats, deshedding &amp; special breeds</span></div>
-					</div>
-				</div>
-
-				<div class="ac-stage reveal">
-					<div class="ac-stage-head"><span class="ac-stage-tag">Stage 3</span><h3>Safety &amp; Special Care</h3></div>
-					<div class="ac-mods">
-						<div class="ac-mod"><span class="ac-mod-n">9</span><span>Nervous, reactive &amp; aggressive dogs</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">10</span><span>Senior dogs &amp; special conditions</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">11</span><span>Canine first aid &amp; emergencies</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">12</span><span>Oral health &amp; dental care</span></div>
-					</div>
-				</div>
-
 				<div class="ac-stage ac-stage-biz reveal">
-					<div class="ac-stage-head"><span class="ac-stage-tag">Stage 4</span><h3>Clients &amp; Business</h3></div>
+					<div class="ac-stage-head"><span class="ac-stage-tag">In development</span><h3>Complete Grooming Program</h3></div>
+					<p class="ac-stage-desc">A comprehensive program designed for beginners, combining theory, hands-on practice and business development.</p>
 					<div class="ac-mods">
-						<div class="ac-mod"><span class="ac-mod-n">13</span><span>Customer service &amp; professional ethics</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">14</span><span>Marketing, sales &amp; entrepreneurship</span></div>
-						<div class="ac-mod"><span class="ac-mod-n">15</span><span>Final evaluation &amp; integrated practice</span></div>
+						<div class="ac-mod"><span class="ac-mod-n"><svg><use href="#paw"/></svg></span><span>Grooming theory &amp; fundamentals</span></div>
+						<div class="ac-mod"><span class="ac-mod-n"><svg><use href="#paw"/></svg></span><span>Supervised hands-on practice</span></div>
+						<div class="ac-mod"><span class="ac-mod-n"><svg><use href="#paw"/></svg></span><span>Business development</span></div>
 					</div>
-					<p class="ac-stage-note">This is where technique becomes a career: how to win clients, keep them and grow.</p>
+					<div class="ac-price"><small>Proposed tuition</small><b>$7,999</b></div>
 				</div>
+
+				<div class="ac-stage reveal">
+					<div class="ac-stage-head"><span class="ac-stage-tag">In development</span><h3>Specialized Grooming Workshops</h3></div>
+					<p class="ac-stage-desc">Individual courses focused on one specialty at a time.</p>
+					<div class="ac-mods">
+						<div class="ac-mod"><span class="ac-mod-n"><svg><use href="#paw"/></svg></span><span>Scissoring &amp; finishing</span></div>
+						<div class="ac-mod"><span class="ac-mod-n"><svg><use href="#paw"/></svg></span><span>Deshedding</span></div>
+						<div class="ac-mod"><span class="ac-mod-n"><svg><use href="#paw"/></svg></span><span>Safe handling &amp; other specialties</span></div>
+					</div>
+					<p class="ac-price-alt">Duration and pricing vary by workshop.</p>
+				</div>
+			</div>
+
+			<div class="ac-dev-note reveal">
+				<strong>Our programs are currently in development.</strong> We're completing the required permits and details before
+				opening them, so enrollment and start dates are not available yet.
+			</div>
+
+			<div class="ac-ways-cta reveal">
+				<a href="#enroll" class="ac-btn ac-btn-primary">
+					<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+					Ask About Our Programs
+				</a>
 			</div>
 		</div>
 	</section>
 
-	<!-- ============ METHOD ============ -->
-	<section class="ac-section ac-soft">
-		<div class="ac-wrap">
-			<div class="ac-center reveal">
-				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> How you'll learn</span>
-				<h2 class="ac-h2">Learn it. See it. <em>Do it.</em></h2>
-				<p class="ac-lead">Every module follows the same proven path, so you leave with real confidence, not just notes.</p>
-			</div>
-
-			<div class="ac-steps">
-				<div class="ac-step reveal">
-					<div class="ac-step-circle"><b>1</b>
-						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.25v13m0-13C10.83 5.48 9.25 5 7.5 5S4.17 5.48 3 6.25v13C4.17 18.48 5.75 18 7.5 18s3.33.48 4.5 1.25m0-13C13.17 5.48 14.75 5 16.5 5s3.33.48 4.5 1.25v13C19.83 18.48 18.25 18 16.5 18s-3.33.48-4.5 1.25"/></svg>
-					</div>
-					<h3>Key theory</h3>
-					<p>Clear objectives and the essential knowledge, with your student manual.</p>
-				</div>
-				<div class="ac-step reveal">
-					<div class="ac-step-circle"><b>2</b>
-						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.46 12C3.73 7.94 7.52 5 12 5s8.27 2.94 9.54 7c-1.27 4.06-5.06 7-9.54 7S3.73 16.06 2.46 12z"/></svg>
-					</div>
-					<h3>Live demonstration</h3>
-					<p>Watch your instructor do it, step by step, on a real dog.</p>
-				</div>
-				<div class="ac-step reveal">
-					<div class="ac-step-circle"><b>3</b>
-						<svg><use href="#paw"/></svg>
-					</div>
-					<h3>Supervised practice</h3>
-					<p>Your turn — with real dogs and an instructor right beside you.</p>
-				</div>
-				<div class="ac-step reveal">
-					<div class="ac-step-circle"><b>4</b>
-						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.84 3.7a3.42 3.42 0 001.95-.81 3.42 3.42 0 014.42 0c.55.47 1.23.75 1.95.81a3.42 3.42 0 013.14 3.14c.06.72.34 1.4.81 1.95a3.42 3.42 0 010 4.42 3.42 3.42 0 00-.81 1.95 3.42 3.42 0 01-3.14 3.14 3.42 3.42 0 00-1.95.81 3.42 3.42 0 01-4.42 0 3.42 3.42 0 00-1.95-.81 3.42 3.42 0 01-3.14-3.14 3.42 3.42 0 00-.81-1.95 3.42 3.42 0 010-4.42c.47-.55.75-1.23.81-1.95A3.42 3.42 0 017.84 3.7z"/></svg>
-					</div>
-					<h3>Evaluation</h3>
-					<p>Show what you've learned and get feedback to keep improving.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ============ INSTRUCTORS ============ -->
-	<section class="ac-section ac-white">
-		<svg class="ac-paw-deco deco-float-reverse" style="width:120px;height:120px;bottom:50px;right:3%"><use href="#paw"/></svg>
-		<div class="ac-wrap ac-team">
-			<div class="ac-team-photo reveal">
-				<img src="assets/images/academy/instructors.webp" alt="Academy lead instructors Yofren, Víctor and Jenniffer" loading="lazy" width="992" height="466">
-				<div class="ac-team-names"><span>Yofren</span><span>Víctor</span><span>Jenniffer</span></div>
-			</div>
-
-			<div class="reveal">
-				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Your instructors</span>
-				<h2 class="ac-h2">Learn from people who <em>do it every day.</em></h2>
-				<p class="ac-lead">
-					Our instructors are part of the Yofren Master Pet Grooming team, serving South Florida families for more than 12 years.
-					They teach what works in the real world — on the table and with the client.
-				</p>
-
-				<div class="ac-team-list">
-					<div class="ac-team-item">
-						<span class="ac-team-ava">Y</span>
-						<div><h3>Yofren</h3><p>Lead Instructor · Yofren Master Pet Grooming</p></div>
-					</div>
-					<div class="ac-team-item">
-						<span class="ac-team-ava">V</span>
-						<div><h3>Víctor</h3><p>Lead Instructor · Scissoring &amp; Finishing Specialist</p></div>
-					</div>
-					<div class="ac-team-item">
-						<span class="ac-team-ava">J</span>
-						<div><h3>Jenniffer</h3><p>Lead Instructor</p></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ============ FAQ ============ -->
-	<section class="ac-section ac-soft">
-		<div class="ac-wrap">
-			<div class="ac-center reveal">
-				<span class="ac-eyebrow"><svg><use href="#paw"/></svg> Questions</span>
-				<h2 class="ac-h2">Good to know</h2>
-			</div>
-
-			<div class="ac-faq reveal">
-				<details>
-					<summary>Do I need grooming experience? <i>+</i></summary>
-					<p>No. The program starts with the fundamentals and builds step by step. If you already groom, it will help you refine your technique and your client skills.</p>
-				</details>
-				<details>
-					<summary>Will I work with real dogs? <i>+</i></summary>
-					<p>Yes. Every module includes hands-on practice with real dogs, always supervised by an instructor.</p>
-				</details>
-				<details>
-					<summary>Does the program cover the business side? <i>+</i></summary>
-					<p>Yes. Beyond technique, you'll learn how to talk with clients, deliver great customer service, and market your work so you can get hired or start your own business.</p>
-				</details>
-				<details>
-					<summary>Where are classes held? <i>+</i></summary>
-					<p>The academy is based in Miami, Florida.</p>
-				</details>
-				<details>
-					<summary>How do I find out about dates and enrollment? <i>+</i></summary>
-					<p>Message us on WhatsApp or give us a call. We'll share the next start dates, schedule and everything you need to enroll.</p>
-				</details>
-			</div>
-		</div>
-	</section>
-
-	<!-- ============ CTA ============ -->
+	<!-- ============ 5 · CONTACT ============ -->
 	<section class="ac-section ac-cta" id="enroll">
 		<svg class="ac-cta-paw deco-float-slow" style="width:90px;height:90px;top:40px;left:6%"><use href="#paw"/></svg>
 		<svg class="ac-cta-paw deco-float-reverse" style="width:150px;height:150px;bottom:30px;right:5%"><use href="#paw"/></svg>
 		<div class="ac-wrap">
 			<div class="ac-cta-card reveal">
-				<h2>Your grooming career starts here.</h2>
-				<span class="ac-script">Make your passion your profession</span>
-				<p>Ask us about the next start date. We'll answer your questions and help you take the first step — no obligation.</p>
+				<h2>Interested in Learning More?</h2>
+				<span class="ac-script">We'd love to hear from you</span>
+				<p>Contact our team to learn about our proposed training programs and future availability.</p>
 				<div class="ac-cta-btns">
-					<a href="https://wa.me/17863200218?text=Hi!%20I'm%20interested%20in%20the%20Yofren%20Master%20Pet%20Grooming%20Academy" target="_blank" class="ac-btn ac-btn-dark">
+					<a href="https://wa.me/17863200218?text=Hi!%20I'd%20like%20information%20about%20the%20Yofren%20Master%20Pet%20Grooming%20training%20programs" target="_blank" class="ac-btn ac-btn-dark">
 						<svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0012.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 005.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 00-3.48-8.41z"/></svg>
-						Message Us on WhatsApp
+						Request Information
 					</a>
 					<a href="tel:+17863200218" class="ac-btn ac-btn-light">
 						<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.21l-2.26 1.13a11.04 11.04 0 005.52 5.52l1.13-2.26a1 1 0 011.21-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"/></svg>
-						Call (786) 320-0218
+						Call Us: (786) 320-0218
 					</a>
 				</div>
 				<div class="ac-cta-loc">
