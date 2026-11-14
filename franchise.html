@@ -21,14 +21,14 @@
 	<meta property="og:title" content="Franchise Ownership | Yofren Master Pet Grooming">
 	<meta property="og:description"
 		content="Discover the advantages of owning a Yofren Master Pet Grooming franchise. Low overhead, recurring revenue, full training & support.">
-	<meta property="og:image" content="https://yofrenpetgrooming.com/assets/images/hero.jpg">
+	<meta property="og:image" content="https://yofrenpetgrooming.com/assets/images/franchise/hero_franchise.webp">
 
 	<!-- Twitter Cards -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Franchise Ownership | Yofren Master Pet Grooming">
 	<meta name="twitter:description"
 		content="Discover the advantages of owning a Yofren Master Pet Grooming franchise. Low overhead, recurring revenue, full training & support.">
-	<meta name="twitter:image" content="https://yofrenpetgrooming.com/assets/images/hero.jpg">
+	<meta name="twitter:image" content="https://yofrenpetgrooming.com/assets/images/franchise/hero_franchise.webp">
 
 	<link rel="stylesheet" href="assets/css/tailwind.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -401,8 +401,12 @@
 	<!-- HERO -->
 	<section class="relative overflow-hidden min-h-[70vh] flex items-center -mt-16">
 		<div class="absolute inset-0 z-0">
-			<img src="assets/images/franchising/hero.jpg" alt="Yofren franchise owner with grooming van"
-				class="w-full h-full object-cover" onerror="this.onerror=null;this.src='assets/images/heroindex.webp'">
+			<picture>
+				<source media="(max-width: 767px)" srcset="assets/images/franchise/hero_telefono_franchise.webp" type="image/webp">
+				<source media="(min-width: 768px)" srcset="assets/images/franchise/hero_franchise.webp" type="image/webp">
+				<img src="assets/images/franchise/hero_franchise.webp" alt="Yofren franchise owner with grooming van"
+					class="w-full h-full object-cover" fetchpriority="high">
+			</picture>
 			<div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
 		</div>
 
